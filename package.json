@@ -1,0 +1,20 @@
+{
+  "name": "global-betting-stats",
+  "version": "1.0.0",
+  "description": "Global Betting Stats Generator - Full Stack Application",
+  "scripts": {
+    "start": "node backend/server.js",
+    "build": "npm install --prefix frontend && npm run build --prefix frontend",
+    "postinstall": "npm install --prefix backend && npm install --prefix frontend",
+    "dev": "concurrently \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

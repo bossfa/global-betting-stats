@@ -1,0 +1,464 @@
+[
+  {
+    "fixture_id": "2026-03-02-RealMadrid-Getafe",
+    "date": "2026-03-02",
+    "time": "20:00",
+    "league": "Spain - La Liga",
+    "country": "Spain",
+    "homeTeam": {
+      "team_name": "Real Madrid"
+    },
+    "awayTeam": {
+      "team_name": "Getafe"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-02-Pisa-Bologna",
+    "date": "2026-03-02",
+    "time": "0:1",
+    "league": "Italy - Serie A",
+    "country": "Italy",
+    "homeTeam": {
+      "team_name": "Pisa"
+    },
+    "awayTeam": {
+      "team_name": "Bologna"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-02-Udinese-Fiorentina",
+    "date": "2026-03-02",
+    "time": "19:45",
+    "league": "Italy - Serie A",
+    "country": "Italy",
+    "homeTeam": {
+      "team_name": "Udinese"
+    },
+    "awayTeam": {
+      "team_name": "Fiorentina"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-02-GilVicente-Benfica",
+    "date": "2026-03-02",
+    "time": "20:15",
+    "league": "Portugal - Primeira Liga",
+    "country": "Portugal",
+    "homeTeam": {
+      "team_name": "Gil Vicente"
+    },
+    "awayTeam": {
+      "team_name": "Benfica"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-02-ZaglebieLubin-WislaPlock",
+    "date": "2026-03-02",
+    "time": "2:0",
+    "league": "Poland - Ekstraklasa",
+    "country": "Poland",
+    "homeTeam": {
+      "team_name": "Zaglebie Lubin"
+    },
+    "awayTeam": {
+      "team_name": "Wisla Plock"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-02-PFCSochi-SpartakMoscow",
+    "date": "2026-03-02",
+    "time": "2:3",
+    "league": "Russia - Super Liga",
+    "country": "Russia",
+    "homeTeam": {
+      "team_name": "PFC Sochi"
+    },
+    "awayTeam": {
+      "team_name": "Spartak Moscow"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-02-UnireaSlobozia-RapidBucharest",
+    "date": "2026-03-02",
+    "time": "1:2",
+    "league": "Romania - Liga I",
+    "country": "Romania",
+    "homeTeam": {
+      "team_name": "Unirea Slobozia"
+    },
+    "awayTeam": {
+      "team_name": "Rapid Bucharest"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-02-IMTN.Beograd-R.Surdulica",
+    "date": "2026-03-02",
+    "time": "0:0",
+    "league": "Serbia - Super Liga",
+    "country": "Serbia",
+    "homeTeam": {
+      "team_name": "IMT N. Beograd"
+    },
+    "awayTeam": {
+      "team_name": "R. Surdulica"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-02-Ludogorets-Lok.Plovdiv",
+    "date": "2026-03-02",
+    "time": "1:1",
+    "league": "Bulgaria - First League",
+    "country": "Bulgaria",
+    "homeTeam": {
+      "team_name": "Ludogorets"
+    },
+    "awayTeam": {
+      "team_name": "Lok. Plovdiv"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-02-SKPoltava-Kudrivka",
+    "date": "2026-03-02",
+    "time": "0:2",
+    "league": "Ukraine - Premier League",
+    "country": "Ukraine",
+    "homeTeam": {
+      "team_name": "SK Poltava"
+    },
+    "awayTeam": {
+      "team_name": "Kudrivka"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-02-OmoniaNicosia-Apollon",
+    "date": "2026-03-02",
+    "time": "1:1",
+    "league": "Cyprus - First Division",
+    "country": "Cyprus",
+    "homeTeam": {
+      "team_name": "Omonia Nicosia"
+    },
+    "awayTeam": {
+      "team_name": "Apollon"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-02-BirminghamCity-Middlesbrough",
+    "date": "2026-03-02",
+    "time": "20:00",
+    "league": "England - Championship",
+    "country": "England",
+    "homeTeam": {
+      "team_name": "Birmingham City"
+    },
+    "awayTeam": {
+      "team_name": "Middlesbrough"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-02-Cordoba-FCAndorra",
+    "date": "2026-03-02",
+    "time": "19:30",
+    "league": "Spain - Segunda Division",
+    "country": "Spain",
+    "homeTeam": {
+      "team_name": "Cordoba"
+    },
+    "awayTeam": {
+      "team_name": "FC Andorra"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-02-HapoelTelAviv-MaccabiHaifa",
+    "date": "2026-03-02",
+    "time": "18:30",
+    "league": "Israel - Premier League",
+    "country": "Israel",
+    "homeTeam": {
+      "team_name": "Hapoel Tel Aviv"
+    },
+    "awayTeam": {
+      "team_name": "Maccabi Haifa"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-02-Amiens-Troyes",
+    "date": "2026-03-02",
+    "time": "19:45",
+    "league": "France - Ligue 2",
+    "country": "France",
+    "homeTeam": {
+      "team_name": "Amiens"
+    },
+    "awayTeam": {
+      "team_name": "Troyes"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-02-St.Patricks-GalwayUtd",
+    "date": "2026-03-02",
+    "time": "19:45",
+    "league": "Republic of Ireland - Premier Division",
+    "country": "Republic of Ireland",
+    "homeTeam": {
+      "team_name": "St. Patricks"
+    },
+    "awayTeam": {
+      "team_name": "Galway Utd"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-02-DefensayJ.-Lanus",
+    "date": "2026-03-02",
+    "time": "1:1",
+    "league": "Argentina - Primera Division",
+    "country": "Argentina",
+    "homeTeam": {
+      "team_name": "Defensa y J."
+    },
+    "awayTeam": {
+      "team_name": "Lanus"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-02-Tigre-Gimnasia",
+    "date": "2026-03-02",
+    "time": "2:2",
+    "league": "Argentina - Primera Division",
+    "country": "Argentina",
+    "homeTeam": {
+      "team_name": "Tigre"
+    },
+    "awayTeam": {
+      "team_name": "Gimnasia"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-02-D.Riestra-Platense",
+    "date": "2026-03-02",
+    "time": "22:15",
+    "league": "Argentina - Primera Division",
+    "country": "Argentina",
+    "homeTeam": {
+      "team_name": "D. Riestra"
+    },
+    "awayTeam": {
+      "team_name": "Platense"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-02-Estudiantes-VelezSarsfield",
+    "date": "2026-03-02",
+    "time": "22:15",
+    "league": "Argentina - Primera Division",
+    "country": "Argentina",
+    "homeTeam": {
+      "team_name": "Estudiantes"
+    },
+    "awayTeam": {
+      "team_name": "Velez Sarsfield"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-02-DeportesTolima-A.Nacional",
+    "date": "2026-03-02",
+    "time": "1:0",
+    "league": "Colombia - Primera A",
+    "country": "Colombia",
+    "homeTeam": {
+      "team_name": "Deportes Tolima"
+    },
+    "awayTeam": {
+      "team_name": "A. Nacional"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-02-D.Maldonado-Juventud",
+    "date": "2026-03-02",
+    "time": "23:00",
+    "league": "Uruguay - Primera Division",
+    "country": "Uruguay",
+    "homeTeam": {
+      "team_name": "D. Maldonado"
+    },
+    "awayTeam": {
+      "team_name": "Juventud"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-02-S.Luqueno-RubioNu",
+    "date": "2026-03-02",
+    "time": "21:30",
+    "league": "Paraguay - Primera Division",
+    "country": "Paraguay",
+    "homeTeam": {
+      "team_name": "S. Luqueno"
+    },
+    "awayTeam": {
+      "team_name": "Rubio Nu"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-02-SanLorenzo-Libertad",
+    "date": "2026-03-02",
+    "time": "23:30",
+    "league": "Paraguay - Primera Division",
+    "country": "Paraguay",
+    "homeTeam": {
+      "team_name": "San Lorenzo"
+    },
+    "awayTeam": {
+      "team_name": "Libertad"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-02-DaejeonCitizen-Anyang",
+    "date": "2026-03-02",
+    "time": "1:1",
+    "league": "South Korea - K-League 1",
+    "country": "South Korea",
+    "homeTeam": {
+      "team_name": "Daejeon Citizen"
+    },
+    "awayTeam": {
+      "team_name": "Anyang"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-02-OrlandoCity-InterMiami",
+    "date": "2026-03-02",
+    "time": "2:4",
+    "league": "USA - MLS",
+    "country": "USA",
+    "homeTeam": {
+      "team_name": "Orlando City"
+    },
+    "awayTeam": {
+      "team_name": "Inter Miami"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-02-SanDiego-St.LouisCity",
+    "date": "2026-03-02",
+    "time": "2:0",
+    "league": "USA - MLS",
+    "country": "USA",
+    "homeTeam": {
+      "team_name": "San Diego"
+    },
+    "awayTeam": {
+      "team_name": "St. Louis City"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-02-AlbirexNiigata-CerezoOsaka",
+    "date": "2026-03-02",
+    "time": "2:2",
+    "league": "Japan - J-League",
+    "country": "Japan",
+    "homeTeam": {
+      "team_name": "Albirex Niigata"
+    },
+    "awayTeam": {
+      "team_name": "Cerezo Osaka"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-02-FagianoOkayama-ShimizuS-Pulse",
+    "date": "2026-03-02",
+    "time": "1:1",
+    "league": "Japan - J-League",
+    "country": "Japan",
+    "homeTeam": {
+      "team_name": "Fagiano Okayama"
+    },
+    "awayTeam": {
+      "team_name": "Shimizu S-Pulse"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-02-NagoyaG.-MachidaZelvia",
+    "date": "2026-03-02",
+    "time": "1:2",
+    "league": "Japan - J-League",
+    "country": "Japan",
+    "homeTeam": {
+      "team_name": "Nagoya G."
+    },
+    "awayTeam": {
+      "team_name": "Machida Zelvia"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-02-TokyoVerdy-GambaOsaka",
+    "date": "2026-03-02",
+    "time": "0:1",
+    "league": "Japan - J-League",
+    "country": "Japan",
+    "homeTeam": {
+      "team_name": "Tokyo Verdy"
+    },
+    "awayTeam": {
+      "team_name": "Gamba Osaka"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-02-S.Hiroshima-YokohamaFC",
+    "date": "2026-03-02",
+    "time": "1:0",
+    "league": "Japan - J-League",
+    "country": "Japan",
+    "homeTeam": {
+      "team_name": "S. Hiroshima"
+    },
+    "awayTeam": {
+      "team_name": "Yokohama FC"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-02-UrawaRD-KashiwaReysol",
+    "date": "2026-03-02",
+    "time": "0:2",
+    "league": "Japan - J-League",
+    "country": "Japan",
+    "homeTeam": {
+      "team_name": "Urawa RD"
+    },
+    "awayTeam": {
+      "team_name": "Kashiwa Reysol"
+    },
+    "status": "NS"
+  }
+]
