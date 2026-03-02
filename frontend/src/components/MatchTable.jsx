@@ -442,7 +442,11 @@ function MatchRow({ match, leagueStandings, onMove, onLeave }) {
         <td className="league-cell">{league}</td>
         <td className="team-cell home">{homeName}{getRank(homePosition)}</td>
         <td className="team-cell away">{awayName}{getRank(awayPosition)}</td>
-        <td className="prediction-cell centered-cell" onClick={(e) => e.stopPropagation()}>
+        <td className="prediction-cell centered-cell" 
+            onClick={(e) => { e.stopPropagation(); onLeave(); }}
+            onMouseEnter={(e) => { e.stopPropagation(); onLeave(); }}
+            onMouseMove={(e) => e.stopPropagation()}
+        >
           <div className="tooltip-container">
             <span className={`status-ball ${ggStatus.color}`}></span>
             {ggStatus.stats && (
@@ -468,7 +472,11 @@ function MatchRow({ match, leagueStandings, onMove, onLeave }) {
             )}
           </div>
         </td>
-        <td className="prediction-cell centered-cell" onClick={(e) => e.stopPropagation()}>
+        <td className="prediction-cell centered-cell" 
+            onClick={(e) => { e.stopPropagation(); onLeave(); }}
+            onMouseEnter={(e) => { e.stopPropagation(); onLeave(); }}
+            onMouseMove={(e) => e.stopPropagation()}
+        >
           <div className="tooltip-container">
             <span className={`status-ball ${overStatus.color}`}></span>
             {overStatus.stats && (
