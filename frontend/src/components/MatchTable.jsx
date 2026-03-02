@@ -436,7 +436,6 @@ function MatchRow({ match, leagueStandings, onMove, onLeave }) {
         className="match-row" 
         onMouseMove={(e) => onMove(e, leagueStandings, homeName, awayName)}
         onMouseLeave={onLeave}
-        onClick={() => setShowDetails(!showDetails)}
       >
         <td className="time-cell">{displayTime}</td>
         <td className="league-cell">{league}</td>
