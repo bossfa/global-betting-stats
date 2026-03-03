@@ -37,14 +37,25 @@ const LEAGUE_URLS = {
   
   // Second Divisions (Popular)
   'England - Championship': 'https://www.soccerstats.com/homeaway.asp?league=england2',
+  'England - League One': 'https://www.soccerstats.com/homeaway.asp?league=england3',
+  'England - League Two': 'https://www.soccerstats.com/homeaway.asp?league=england4',
+  'England - National League': 'https://www.soccerstats.com/homeaway.asp?league=england5',
+  'England - National League North': 'https://www.soccerstats.com/homeaway.asp?league=england6',
+  'England - National League South': 'https://www.soccerstats.com/homeaway.asp?league=england7',
   'Italy - Serie B': 'https://www.soccerstats.com/homeaway.asp?league=italy2',
+  'Italy - Serie C Group A': 'https://www.soccerstats.com/homeaway.asp?league=italy3a',
+  'Italy - Serie C Group B': 'https://www.soccerstats.com/homeaway.asp?league=italy3b',
+  'Italy - Serie C Group C': 'https://www.soccerstats.com/homeaway.asp?league=italy3c',
   'Spain - Segunda Division': 'https://www.soccerstats.com/homeaway.asp?league=spain2',
   'Germany - 2. Bundesliga': 'https://www.soccerstats.com/homeaway.asp?league=germany2',
   'France - Ligue 2': 'https://www.soccerstats.com/homeaway.asp?league=france2',
+  'Netherlands - Eerste Divisie': 'https://www.soccerstats.com/homeaway.asp?league=netherlands2',
+  'Belgium - Challenger Pro League': 'https://www.soccerstats.com/homeaway.asp?league=belgium2',
   
   // UK & Ireland (Others)
   'Wales - Premier League': 'https://www.soccerstats.com/homeaway.asp?league=wales',
   'Northern Ireland - Premiership': 'https://www.soccerstats.com/homeaway.asp?league=northernireland',
+  'Northern Ireland - Championship': 'https://www.soccerstats.com/homeaway.asp?league=northernireland2',
   'Republic of Ireland - Premier Division': 'https://www.soccerstats.com/homeaway.asp?league=ireland',
   'Scotland - Championship': 'https://www.soccerstats.com/homeaway.asp?league=scotland2',
 
