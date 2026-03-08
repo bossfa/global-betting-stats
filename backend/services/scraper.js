@@ -85,7 +85,20 @@ const LEAGUE_URLS = {
   'Japan - J-League': 'https://www.soccerstats.com/homeaway.asp?league=japan',
   'South Korea - K-League 1': 'https://www.soccerstats.com/homeaway.asp?league=southkorea',
   'Australia - A-League': 'https://www.soccerstats.com/homeaway.asp?league=australia',
-  'China - Super League': 'https://www.soccerstats.com/homeaway.asp?league=china'
+  'China - Super League': 'https://www.soccerstats.com/homeaway.asp?league=china',
+  'Saudi Arabia - Pro League': 'https://www.soccerstats.com/homeaway.asp?league=saudiarabia',
+  'India - Super League': 'https://www.soccerstats.com/homeaway.asp?league=india',
+  'Jordan - Pro League': 'https://www.soccerstats.com/homeaway.asp?league=jordan',
+  'UAE - Pro League': 'https://www.soccerstats.com/homeaway.asp?league=uae',
+  'Qatar - Stars League': 'https://www.soccerstats.com/homeaway.asp?league=qatar',
+  'Egypt - Premier League': 'https://www.soccerstats.com/homeaway.asp?league=egypt',
+  'Morocco - Botola Pro': 'https://www.soccerstats.com/homeaway.asp?league=morocco',
+  'South Africa - Premier Division': 'https://www.soccerstats.com/homeaway.asp?league=southafrica',
+  'Thailand - Thai League 1': 'https://www.soccerstats.com/homeaway.asp?league=thailand',
+  'Indonesia - Liga 1': 'https://www.soccerstats.com/homeaway.asp?league=indonesia',
+  'Singapore - Premier League': 'https://www.soccerstats.com/homeaway.asp?league=singapore',
+  'Malaysia - Super League': 'https://www.soccerstats.com/homeaway.asp?league=malaysia',
+  'Vietnam - V.League 1': 'https://www.soccerstats.com/homeaway.asp?league=vietnam'
 };
 
 /**

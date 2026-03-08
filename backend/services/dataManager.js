@@ -5,6 +5,13 @@ const analyzer = require('./analyzer');
 
 const DATA_DIR = path.join(__dirname, '../data');
 
+// Sync Status State
+let syncStatus = {
+    isSyncing: false,
+    currentAction: 'Idle',
+    lastSyncTime: null
+};
+
 // Ensure data dir exists
 if (!fs.existsSync(DATA_DIR)) {
   fs.mkdirSync(DATA_DIR);
@@ -17,53 +24,61 @@ if (!fs.existsSync(DATA_DIR)) {
  * 3. Enriches fixtures with Home/Away stats from standings
  */
 async function syncDailyData(date) {
+  syncStatus.isSyncing = true;
+  syncStatus.currentAction = `Syncing data for ${date}...`;
   console.log(`Starting Daily SCRAPE Sync for ${date}...`);
   
-  // 1. Scrape Standings for all supported leagues
-  const leagueStandings = {};
-  for (const [leagueName, url] of Object.entries(scraper.LEAGUE_URLS)) {
-      console.log(`Scraping standings for ${leagueName}...`);
-      const standings = await scraper.scrapeLeagueStandings(leagueName);
-      leagueStandings[leagueName] = standings;
-      // Sleep to be polite
-      await new Promise(r => setTimeout(r, 1000));
-  }
-  
-  // Save Standings
-  const standingsPath = path.join(DATA_DIR, `standings_${date}.json`);
-  
-  // Always overwrite/create the file with fresh data
   try {
+      // 1. Scrape Standings for all supported leagues
+      const leagueStandings = {};
+      for (const [leagueName, url] of Object.entries(scraper.LEAGUE_URLS)) {
+          syncStatus.currentAction = `Scraping standings: ${leagueName} (${date})`;
+          console.log(`Scraping standings for ${leagueName}...`);
+          const standings = await scraper.scrapeLeagueStandings(leagueName);
+          leagueStandings[leagueName] = standings;
+          // Sleep to be polite
+          await new Promise(r => setTimeout(r, 1000));
+      }
+      
+      // Save Standings
+      syncStatus.currentAction = `Saving standings for ${date}`;
+      const standingsPath = path.join(DATA_DIR, `standings_${date}.json`);
+      
+      // Always overwrite/create the file with fresh data
       if (fs.existsSync(standingsPath)) {
           fs.unlinkSync(standingsPath); // Delete old file first to be safe
       }
       fs.writeFileSync(standingsPath, JSON.stringify(leagueStandings, null, 2));
       console.log(`Successfully saved new standings to ${standingsPath}`);
-  } catch (err) {
-      console.error(`Error saving standings file: ${err.message}`);
-      throw err;
-  }
 
-  // 2. Scrape Fixtures
-  console.log("Standings synced. Now scraping matches...");
-  const fixtures = await scraper.scrapeFixtures(date); 
-  console.log(`Scraped ${fixtures.length} matches.`);
+      // 2. Scrape Fixtures
+      syncStatus.currentAction = `Scraping matches for ${date}`;
+      console.log("Standings synced. Now scraping matches...");
+      const fixtures = await scraper.scrapeFixtures(date); 
+      console.log(`Scraped ${fixtures.length} matches.`);
 
-  // Save Matches
-  const matchesPath = path.join(DATA_DIR, `matches_${date}.json`);
-  try {
+      // Save Matches
+      syncStatus.currentAction = `Saving matches for ${date}`;
+      const matchesPath = path.join(DATA_DIR, `matches_${date}.json`);
       if (fs.existsSync(matchesPath)) {
           fs.unlinkSync(matchesPath);
       }
       fs.writeFileSync(matchesPath, JSON.stringify(fixtures, null, 2));
       console.log(`Successfully saved new matches to ${matchesPath}`);
-  } catch (err) {
-      console.error(`Error saving matches file: ${err.message}`);
+      
+      // 3. Save Files
+      // We return the standings keys for info, but the main goal is done.
+      return Object.keys(leagueStandings);
+  } finally {
+      // Only reset status if not part of a larger batch (prefetch handles its own status)
+      // But since this is also called directly, we rely on the caller to manage global status if needed.
+      // However, for single sync calls, we might want to reset. 
+      // Let's assume prefetch will override or we just set idle here if not prefetching.
+      // Ideally, we shouldn't reset here if called from prefetch.
+      // Simplified: We'll set idle in the caller (API or Prefetch), or we can check a flag.
+      // For now, let's NOT reset here to avoid flickering during prefetch loop.
+      // The caller is responsible for setting isSyncing = false.
   }
-  
-  // 3. Save Files
-  // We return the standings keys for info, but the main goal is done.
-  return Object.keys(leagueStandings);
 }
 
 /**
@@ -108,7 +123,63 @@ function getDailyAnalysis(date) {
     };
 }
 
+/**
+ * Prefetches data for the next 7 days in the background.
+ * Checks if data exists; if not, triggers sync.
+ */
+async function prefetchWeekData() {
+    if (syncStatus.isSyncing) {
+        console.log('[BACKGROUND] Sync already in progress. Skipping prefetch.');
+        return;
+    }
+
+    syncStatus.isSyncing = true;
+    syncStatus.currentAction = 'Starting 7-day prefetch...';
+    console.log('[BACKGROUND] Starting 7-day prefetch...');
+    
+    const today = new Date();
+    
+    try {
+        for (let i = 0; i < 7; i++) {
+            const nextDate = new Date(today);
+            nextDate.setDate(today.getDate() + i);
+            const dateStr = nextDate.toISOString().split('T')[0];
+            
+            syncStatus.currentAction = `Checking data for ${dateStr}`;
+            const matchesPath = path.join(DATA_DIR, `matches_${dateStr}.json`);
+            
+            if (fs.existsSync(matchesPath)) {
+                console.log(`[BACKGROUND] Data for ${dateStr} already exists. Skipping.`);
+                continue;
+            }
+
+            syncStatus.currentAction = `Syncing missing data for ${dateStr}`;
+            console.log(`[BACKGROUND] Data for ${dateStr} missing. Syncing now...`);
+            try {
+                await syncDailyData(dateStr);
+                console.log(`[BACKGROUND] Synced ${dateStr} successfully.`);
+                // Sleep between days to prevent overwhelming the source/server
+                syncStatus.currentAction = `Cooling down...`;
+                await new Promise(r => setTimeout(r, 5000)); 
+            } catch (err) {
+                console.error(`[BACKGROUND] Failed to sync ${dateStr}: ${err.message}`);
+            }
+        }
+        console.log('[BACKGROUND] 7-day prefetch completed.');
+    } finally {
+        syncStatus.isSyncing = false;
+        syncStatus.currentAction = 'Idle';
+        syncStatus.lastSyncTime = new Date().toISOString();
+    }
+}
+
+function getSyncStatus() {
+    return syncStatus;
+}
+
 module.exports = {
     syncDailyData,
-    getDailyAnalysis
+    getDailyAnalysis,
+    prefetchWeekData,
+    getSyncStatus
 };
