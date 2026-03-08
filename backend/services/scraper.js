@@ -11,10 +11,10 @@ const LEAGUE_URLS = {
   'Germany - Bundesliga': 'https://www.soccerstats.com/homeaway.asp?league=germany',
   'France - Ligue 1': 'https://www.soccerstats.com/homeaway.asp?league=france',
   
-  // European Cups
-  'Europe - Champions League': 'https://www.soccerstats.com/homeaway.asp?league=championsleague',
-  'Europe - Europa League': 'https://www.soccerstats.com/homeaway.asp?league=europaleague',
-  'Europe - Conference League': 'https://www.soccerstats.com/homeaway.asp?league=conferenceleague',
+  // European Cups (using leagueview.asp for fixtures)
+  'Europe - Champions League': 'https://www.soccerstats.com/leagueview.asp?league=cleague',
+  'Europe - Europa League': 'https://www.soccerstats.com/leagueview.asp?league=uefa',
+  'Europe - Conference League': 'https://www.soccerstats.com/leagueview.asp?league=conference',
   
   // Other European Leagues
   'Netherlands - Eredivisie': 'https://www.soccerstats.com/homeaway.asp?league=netherlands',
@@ -103,12 +103,7 @@ const LEAGUE_URLS = {
   'Indonesia - Liga 1': 'https://www.soccerstats.com/homeaway.asp?league=indonesia',
   'Singapore - Premier League': 'https://www.soccerstats.com/homeaway.asp?league=singapore',
   'Malaysia - Super League': 'https://www.soccerstats.com/homeaway.asp?league=malaysia',
-  'Vietnam - V.League 1': 'https://www.soccerstats.com/homeaway.asp?league=vietnam',
-
-  // European Cups
-  'Europe - Champions League': 'https://www.soccerstats.com/homeaway.asp?league=championsleague',
-  'Europe - Europa League': 'https://www.soccerstats.com/homeaway.asp?league=europaleague',
-  'Europe - Conference League': 'https://www.soccerstats.com/homeaway.asp?league=conferenceleague'
+  'Vietnam - V.League 1': 'https://www.soccerstats.com/homeaway.asp?league=vietnam'
 };
 
 /**
@@ -299,9 +294,15 @@ async function scrapeFixtures(date) {
         
         const promises = batch.map(async ([leagueName, url]) => {
             try {
-                const leagueCode = url.split('league=')[1].split('&')[0];
-                const matches = await scrapeLeagueFixtures(leagueName, leagueCode, monthIndex, dateSearchStr, date);
-                fixtures.push(...matches);
+                // Check if it's a Cup competition (using leagueview.asp)
+                if (url.includes('leagueview.asp')) {
+                    const matches = await scrapeCupFixtures(leagueName, url, dateSearchStr, date);
+                    fixtures.push(...matches);
+                } else {
+                    const leagueCode = url.split('league=')[1].split('&')[0];
+                    const matches = await scrapeLeagueFixtures(leagueName, leagueCode, monthIndex, dateSearchStr, date);
+                    fixtures.push(...matches);
+                }
             } catch (err) {
                 console.error(`Failed to scrape ${leagueName}: ${err.message}`);
             }
@@ -385,6 +386,100 @@ async function scrapeLeagueFixtures(leagueName, leagueCode, monthIndex, dateSear
 
     } catch (error) {
         // console.warn(`Error scraping ${leagueName}: ${error.message}`);
+        return [];
+    }
+}
+
+/**
+ * Scrapes fixtures for cup competitions from leagueview.asp pages.
+ */
+async function scrapeCupFixtures(leagueName, url, dateSearchStr, fullDate) {
+    try {
+        const { data } = await axios.get(url, {
+             headers: { 
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+                'Cookie': 'const_cook=1'
+            },
+            timeout: 10000 
+        });
+        
+        const $ = cheerio.load(data);
+        const matches = [];
+
+        $('tr').each((i, row) => {
+            const tds = $(row).find('td');
+            if (tds.length < 3) return;
+            
+            // Expected structure for upcoming matches:
+            // TD 0: "Tu 10 Mar 17:45" (Date Time)
+            // TD 1: "1/8 F" (Round)
+            // TD 2: "Galatasaray - Liverpool" (Teams)
+            
+            // Expected structure for past matches:
+            // TD 0: "Tu 30 Sep" (Date)
+            // TD 1: Empty
+            // TD 2: "Galatasaray - Liverpool" (Teams)
+            // TD 3: "1:0" (Score)
+
+            const dateText = $(tds[0]).text().trim();
+            // Regex to match "10 Mar" regardless of "Tu " prefix
+            const regex = new RegExp(`\\b${dateSearchStr}\\b`, 'i');
+
+            if (regex.test(dateText)) {
+                let homeTeam, awayTeam, timeScore, status;
+                
+                // Try to parse teams from TD 2
+                const teamsText = $(tds[2]).text().trim();
+                if (teamsText.includes(' - ')) {
+                    const parts = teamsText.split(' - ');
+                    homeTeam = parts[0].trim();
+                    awayTeam = parts[1].trim();
+                }
+
+                // If teams not found in TD 2, skip
+                if (!homeTeam || !awayTeam) return;
+
+                // Determine time/score
+                // Extract time from dateText: "Tu 10 Mar 17:45" -> "17:45"
+                const timeMatch = dateText.match(/\d{2}:\d{2}/);
+                if (timeMatch) {
+                    timeScore = timeMatch[0];
+                    status = 'NS'; // Not Started
+                } else {
+                    // Maybe it's a past match with score in TD 3
+                    const scoreText = $(tds[3] ? tds[3] : {}).text ? $(tds[3]).text().trim() : '';
+                    if (scoreText.includes(':')) {
+                        timeScore = scoreText;
+                        status = 'FT'; // Finished
+                    } else {
+                        timeScore = 'TBD';
+                        status = 'NS';
+                    }
+                }
+
+                if (homeTeam && awayTeam) {
+                    matches.push({
+                        fixture_id: `${fullDate}-${homeTeam}-${awayTeam}`.replace(/\s+/g, ''),
+                        date: fullDate,
+                        time: timeScore,
+                        league: leagueName,
+                        country: 'Europe', // Generic country for cups
+                        homeTeam: { team_name: homeTeam },
+                        awayTeam: { team_name: awayTeam },
+                        status: status
+                    });
+                }
+            }
+        });
+        
+        if (matches.length > 0) {
+            console.log(`Found ${matches.length} cup matches in ${leagueName}`);
+        }
+        
+        return matches;
+
+    } catch (error) {
+        console.warn(`Error scraping cup ${leagueName}: ${error.message}`);
         return [];
     }
 }

@@ -987,6 +987,21 @@
       {
         "rank": "6",
         "team": {
+          "name": "AC Milan"
+        },
+        "played": 14,
+        "win": 8,
+        "draw": 4,
+        "lose": 2,
+        "points": 28,
+        "goals": {
+          "for": 19,
+          "against": 11
+        }
+      },
+      {
+        "rank": "7",
+        "team": {
           "name": "Como"
         },
         "played": 14,
@@ -997,21 +1012,6 @@
         "goals": {
           "for": 24,
           "against": 10
-        }
-      },
-      {
-        "rank": "7",
-        "team": {
-          "name": "AC Milan"
-        },
-        "played": 13,
-        "win": 7,
-        "draw": 4,
-        "lose": 2,
-        "points": 25,
-        "goals": {
-          "for": 18,
-          "against": 11
         }
       },
       {
@@ -1216,14 +1216,14 @@
         "team": {
           "name": "Inter Milan"
         },
-        "played": 13,
+        "played": 14,
         "win": 11,
         "draw": 0,
-        "lose": 2,
+        "lose": 3,
         "points": 33,
         "goals": {
           "for": 26,
-          "against": 9
+          "against": 10
         }
       },
       {
@@ -1517,14 +1517,14 @@
         "team": {
           "name": "Inter Milan"
         },
-        "played": 27,
+        "played": 28,
         "win": 22,
         "draw": 1,
-        "lose": 4,
+        "lose": 5,
         "points": 67,
         "goals": {
           "for": 64,
-          "against": 21
+          "against": 22
         },
         "rank": 1
       },
@@ -1532,13 +1532,13 @@
         "team": {
           "name": "AC Milan"
         },
-        "played": 27,
-        "win": 16,
+        "played": 28,
+        "win": 17,
         "draw": 9,
         "lose": 2,
-        "points": 57,
+        "points": 60,
         "goals": {
-          "for": 43,
+          "for": 44,
           "against": 20
         },
         "rank": 2
@@ -1910,6 +1910,21 @@
       {
         "rank": "7",
         "team": {
+          "name": "Valencia"
+        },
+        "played": 14,
+        "win": 6,
+        "draw": 5,
+        "lose": 3,
+        "points": 23,
+        "goals": {
+          "for": 19,
+          "against": 15
+        }
+      },
+      {
+        "rank": "8",
+        "team": {
           "name": "Athletic Bilbao"
         },
         "played": 14,
@@ -1923,7 +1938,7 @@
         }
       },
       {
-        "rank": "8",
+        "rank": "9",
         "team": {
           "name": "Elche"
         },
@@ -1938,7 +1953,7 @@
         }
       },
       {
-        "rank": "9",
+        "rank": "10",
         "team": {
           "name": "Real Sociedad"
         },
@@ -1950,21 +1965,6 @@
         "goals": {
           "for": 24,
           "against": 20
-        }
-      },
-      {
-        "rank": "10",
-        "team": {
-          "name": "Valencia"
-        },
-        "played": 13,
-        "win": 5,
-        "draw": 5,
-        "lose": 3,
-        "points": 20,
-        "goals": {
-          "for": 16,
-          "against": 13
         }
       },
       {
@@ -2364,14 +2364,14 @@
         "team": {
           "name": "Alaves"
         },
-        "played": 13,
+        "played": 14,
         "win": 2,
         "draw": 2,
-        "lose": 9,
+        "lose": 10,
         "points": 8,
         "goals": {
-          "for": 7,
-          "against": 19
+          "for": 9,
+          "against": 22
         }
       },
       {
@@ -2588,6 +2588,21 @@
       },
       {
         "team": {
+          "name": "Valencia"
+        },
+        "played": 27,
+        "win": 8,
+        "draw": 8,
+        "lose": 11,
+        "points": 32,
+        "goals": {
+          "for": 30,
+          "against": 41
+        },
+        "rank": 12
+      },
+      {
+        "team": {
           "name": "Rayo Vallecano"
         },
         "played": 27,
@@ -2599,7 +2614,7 @@
           "for": 27,
           "against": 33
         },
-        "rank": 12
+        "rank": 13
       },
       {
         "team": {
@@ -2614,7 +2629,7 @@
           "for": 35,
           "against": 42
         },
-        "rank": 13
+        "rank": 14
       },
       {
         "team": {
@@ -2629,35 +2644,20 @@
           "for": 28,
           "against": 43
         },
-        "rank": 14
-      },
-      {
-        "team": {
-          "name": "Valencia"
-        },
-        "played": 26,
-        "win": 7,
-        "draw": 8,
-        "lose": 11,
-        "points": 29,
-        "goals": {
-          "for": 27,
-          "against": 39
-        },
         "rank": 15
       },
       {
         "team": {
           "name": "Alaves"
         },
-        "played": 26,
+        "played": 27,
         "win": 7,
         "draw": 6,
-        "lose": 13,
+        "lose": 14,
         "points": 27,
         "goals": {
-          "for": 23,
-          "against": 34
+          "for": 25,
+          "against": 37
         },
         "rank": 16
       },
@@ -3576,6 +3576,21 @@
       {
         "rank": "3",
         "team": {
+          "name": "Lyon"
+        },
+        "played": 12,
+        "win": 9,
+        "draw": 1,
+        "lose": 2,
+        "points": 28,
+        "goals": {
+          "for": 20,
+          "against": 8
+        }
+      },
+      {
+        "rank": "4",
+        "team": {
           "name": "Marseille"
         },
         "played": 12,
@@ -3586,21 +3601,6 @@
         "goals": {
           "for": 32,
           "against": 15
-        }
-      },
-      {
-        "rank": "4",
-        "team": {
-          "name": "Lyon"
-        },
-        "played": 11,
-        "win": 9,
-        "draw": 0,
-        "lose": 2,
-        "points": 27,
-        "goals": {
-          "for": 19,
-          "against": 7
         }
       },
       {
@@ -3938,6 +3938,21 @@
       {
         "rank": "9",
         "team": {
+          "name": "Paris FC"
+        },
+        "played": 13,
+        "win": 3,
+        "draw": 5,
+        "lose": 5,
+        "points": 14,
+        "goals": {
+          "for": 14,
+          "against": 19
+        }
+      },
+      {
+        "rank": "10",
+        "team": {
           "name": "Strasbourg"
         },
         "played": 13,
@@ -3948,21 +3963,6 @@
         "goals": {
           "for": 19,
           "against": 22
-        }
-      },
-      {
-        "rank": "10",
-        "team": {
-          "name": "Paris FC"
-        },
-        "played": 12,
-        "win": 3,
-        "draw": 4,
-        "lose": 5,
-        "points": 13,
-        "goals": {
-          "for": 13,
-          "against": 18
         }
       },
       {
@@ -4136,14 +4136,14 @@
         "team": {
           "name": "Lyon"
         },
-        "played": 24,
+        "played": 25,
         "win": 14,
-        "draw": 3,
+        "draw": 4,
         "lose": 7,
-        "points": 45,
+        "points": 46,
         "goals": {
-          "for": 39,
-          "against": 26
+          "for": 40,
+          "against": 27
         },
         "rank": 4
       },
@@ -4269,6 +4269,21 @@
       },
       {
         "team": {
+          "name": "Paris FC"
+        },
+        "played": 25,
+        "win": 6,
+        "draw": 9,
+        "lose": 10,
+        "points": 27,
+        "goals": {
+          "for": 29,
+          "against": 41
+        },
+        "rank": 13
+      },
+      {
+        "team": {
           "name": "Le Havre"
         },
         "played": 25,
@@ -4279,21 +4294,6 @@
         "goals": {
           "for": 20,
           "against": 32
-        },
-        "rank": 13
-      },
-      {
-        "team": {
-          "name": "Paris FC"
-        },
-        "played": 24,
-        "win": 6,
-        "draw": 8,
-        "lose": 10,
-        "points": 26,
-        "goals": {
-          "for": 28,
-          "against": 40
         },
         "rank": 14
       },
@@ -4359,6 +4359,21 @@
       }
     ]
   },
+  "Europe - Champions League": {
+    "home": [],
+    "away": [],
+    "total": []
+  },
+  "Europe - Europa League": {
+    "home": [],
+    "away": [],
+    "total": []
+  },
+  "Europe - Conference League": {
+    "home": [],
+    "away": [],
+    "total": []
+  },
   "Netherlands - Eredivisie": {
     "home": [
       {
@@ -4409,6 +4424,21 @@
       {
         "rank": "4",
         "team": {
+          "name": "NEC Nijmegen"
+        },
+        "played": 13,
+        "win": 8,
+        "draw": 2,
+        "lose": 3,
+        "points": 26,
+        "goals": {
+          "for": 35,
+          "against": 20
+        }
+      },
+      {
+        "rank": "5",
+        "team": {
           "name": "FC Twente"
         },
         "played": 13,
@@ -4419,21 +4449,6 @@
         "goals": {
           "for": 22,
           "against": 12
-        }
-      },
-      {
-        "rank": "5",
-        "team": {
-          "name": "NEC Nijmegen"
-        },
-        "played": 12,
-        "win": 7,
-        "draw": 2,
-        "lose": 3,
-        "points": 23,
-        "goals": {
-          "for": 32,
-          "against": 20
         }
       },
       {
@@ -4878,14 +4893,14 @@
         "team": {
           "name": "FC Volendam"
         },
-        "played": 12,
+        "played": 13,
         "win": 1,
         "draw": 2,
-        "lose": 9,
+        "lose": 10,
         "points": 5,
         "goals": {
           "for": 7,
-          "against": 24
+          "against": 27
         }
       },
       {
@@ -4937,6 +4952,21 @@
       },
       {
         "team": {
+          "name": "NEC Nijmegen"
+        },
+        "played": 26,
+        "win": 13,
+        "draw": 7,
+        "lose": 6,
+        "points": 46,
+        "goals": {
+          "for": 64,
+          "against": 43
+        },
+        "rank": 3
+      },
+      {
+        "team": {
           "name": "FC Twente"
         },
         "played": 26,
@@ -4948,7 +4978,7 @@
           "for": 45,
           "against": 27
         },
-        "rank": 3
+        "rank": 4
       },
       {
         "team": {
@@ -4962,21 +4992,6 @@
         "goals": {
           "for": 48,
           "against": 34
-        },
-        "rank": 4
-      },
-      {
-        "team": {
-          "name": "NEC Nijmegen"
-        },
-        "played": 25,
-        "win": 12,
-        "draw": 7,
-        "lose": 6,
-        "points": 43,
-        "goals": {
-          "for": 61,
-          "against": 43
         },
         "rank": 5
       },
@@ -5104,14 +5119,14 @@
         "team": {
           "name": "FC Volendam"
         },
-        "played": 25,
+        "played": 26,
         "win": 7,
         "draw": 6,
-        "lose": 12,
+        "lose": 13,
         "points": 27,
         "goals": {
           "for": 29,
-          "against": 41
+          "against": 44
         },
         "rank": 14
       },
@@ -5347,6 +5362,21 @@
       {
         "rank": "12",
         "team": {
+          "name": "Santa Clara"
+        },
+        "played": 13,
+        "win": 4,
+        "draw": 2,
+        "lose": 7,
+        "points": 14,
+        "goals": {
+          "for": 12,
+          "against": 14
+        }
+      },
+      {
+        "rank": "13",
+        "team": {
           "name": "Estrela Amadora"
         },
         "played": 13,
@@ -5360,7 +5390,7 @@
         }
       },
       {
-        "rank": "13",
+        "rank": "14",
         "team": {
           "name": "Casa Pia"
         },
@@ -5375,7 +5405,7 @@
         }
       },
       {
-        "rank": "14",
+        "rank": "15",
         "team": {
           "name": "Nacional"
         },
@@ -5387,21 +5417,6 @@
         "goals": {
           "for": 17,
           "against": 20
-        }
-      },
-      {
-        "rank": "15",
-        "team": {
-          "name": "Santa Clara"
-        },
-        "played": 12,
-        "win": 3,
-        "draw": 2,
-        "lose": 7,
-        "points": 11,
-        "goals": {
-          "for": 10,
-          "against": 14
         }
       },
       {
@@ -5666,14 +5681,14 @@
         "team": {
           "name": "Guimaraes"
         },
-        "played": 11,
+        "played": 12,
         "win": 3,
         "draw": 1,
-        "lose": 7,
+        "lose": 8,
         "points": 10,
         "goals": {
           "for": 10,
-          "against": 19
+          "against": 21
         }
       },
       {
@@ -5847,14 +5862,14 @@
         "team": {
           "name": "Guimaraes"
         },
-        "played": 24,
+        "played": 25,
         "win": 9,
         "draw": 5,
-        "lose": 10,
+        "lose": 11,
         "points": 32,
         "goals": {
           "for": 28,
-          "against": 35
+          "against": 37
         },
         "rank": 9
       },
@@ -5935,6 +5950,21 @@
       },
       {
         "team": {
+          "name": "Santa Clara"
+        },
+        "played": 25,
+        "win": 5,
+        "draw": 7,
+        "lose": 13,
+        "points": 22,
+        "goals": {
+          "for": 22,
+          "against": 31
+        },
+        "rank": 15
+      },
+      {
+        "team": {
           "name": "Rio Ave"
         },
         "played": 24,
@@ -5945,21 +5975,6 @@
         "goals": {
           "for": 23,
           "against": 44
-        },
-        "rank": 15
-      },
-      {
-        "team": {
-          "name": "Santa Clara"
-        },
-        "played": 24,
-        "win": 4,
-        "draw": 7,
-        "lose": 13,
-        "points": 19,
-        "goals": {
-          "for": 20,
-          "against": 31
         },
         "rank": 16
       },
@@ -8126,11 +8141,11 @@
         "team": {
           "name": "Olympiakos"
         },
-        "played": 11,
+        "played": 12,
         "win": 9,
-        "draw": 1,
+        "draw": 2,
         "lose": 1,
-        "points": 28,
+        "points": 29,
         "goals": {
           "for": 24,
           "against": 5
@@ -8338,11 +8353,11 @@
         "team": {
           "name": "PAOK"
         },
-        "played": 11,
+        "played": 12,
         "win": 6,
-        "draw": 3,
+        "draw": 4,
         "lose": 2,
-        "points": 21,
+        "points": 22,
         "goals": {
           "for": 24,
           "against": 12
@@ -8534,11 +8549,11 @@
         "team": {
           "name": "PAOK"
         },
-        "played": 23,
+        "played": 24,
         "win": 16,
-        "draw": 5,
+        "draw": 6,
         "lose": 2,
-        "points": 53,
+        "points": 54,
         "goals": {
           "for": 48,
           "against": 15
@@ -8549,11 +8564,11 @@
         "team": {
           "name": "Olympiakos"
         },
-        "played": 23,
+        "played": 24,
         "win": 16,
-        "draw": 5,
+        "draw": 6,
         "lose": 2,
-        "points": 53,
+        "points": 54,
         "goals": {
           "for": 42,
           "against": 11
@@ -10511,6 +10526,21 @@
       {
         "rank": "10",
         "team": {
+          "name": "Legia Warsaw"
+        },
+        "played": 12,
+        "win": 5,
+        "draw": 4,
+        "lose": 3,
+        "points": 19,
+        "goals": {
+          "for": 15,
+          "against": 10
+        }
+      },
+      {
+        "rank": "11",
+        "team": {
           "name": "Lech Poznan"
         },
         "played": 12,
@@ -10524,7 +10554,7 @@
         }
       },
       {
-        "rank": "11",
+        "rank": "12",
         "team": {
           "name": "Motor Lublin"
         },
@@ -10539,7 +10569,7 @@
         }
       },
       {
-        "rank": "12",
+        "rank": "13",
         "team": {
           "name": "Widzew Lodz"
         },
@@ -10554,7 +10584,7 @@
         }
       },
       {
-        "rank": "13",
+        "rank": "14",
         "team": {
           "name": "Rakow C."
         },
@@ -10569,7 +10599,7 @@
         }
       },
       {
-        "rank": "14",
+        "rank": "15",
         "team": {
           "name": "Cracovia Krakow"
         },
@@ -10584,7 +10614,7 @@
         }
       },
       {
-        "rank": "15",
+        "rank": "16",
         "team": {
           "name": "Korona Kielce"
         },
@@ -10596,21 +10626,6 @@
         "goals": {
           "for": 16,
           "against": 14
-        }
-      },
-      {
-        "rank": "16",
-        "team": {
-          "name": "Legia Warsaw"
-        },
-        "played": 11,
-        "win": 4,
-        "draw": 4,
-        "lose": 3,
-        "points": 16,
-        "goals": {
-          "for": 14,
-          "against": 10
         }
       },
       {
@@ -10708,21 +10723,6 @@
       {
         "rank": "5",
         "team": {
-          "name": "Cracovia Krakow"
-        },
-        "played": 12,
-        "win": 4,
-        "draw": 4,
-        "lose": 4,
-        "points": 16,
-        "goals": {
-          "for": 14,
-          "against": 14
-        }
-      },
-      {
-        "rank": "6",
-        "team": {
           "name": "Korona Kielce"
         },
         "played": 12,
@@ -10733,6 +10733,21 @@
         "goals": {
           "for": 13,
           "against": 13
+        }
+      },
+      {
+        "rank": "6",
+        "team": {
+          "name": "Cracovia Krakow"
+        },
+        "played": 13,
+        "win": 4,
+        "draw": 4,
+        "lose": 5,
+        "points": 16,
+        "goals": {
+          "for": 14,
+          "against": 15
         }
       },
       {
@@ -11026,14 +11041,14 @@
         "team": {
           "name": "Cracovia Krakow"
         },
-        "played": 23,
+        "played": 24,
         "win": 8,
         "draw": 9,
-        "lose": 6,
+        "lose": 7,
         "points": 33,
         "goals": {
           "for": 29,
-          "against": 25
+          "against": 26
         },
         "rank": 8
       },
@@ -11129,6 +11144,21 @@
       },
       {
         "team": {
+          "name": "Legia Warsaw"
+        },
+        "played": 24,
+        "win": 6,
+        "draw": 10,
+        "lose": 8,
+        "points": 28,
+        "goals": {
+          "for": 28,
+          "against": 29
+        },
+        "rank": 15
+      },
+      {
+        "team": {
           "name": "Widzew Lodz"
         },
         "played": 24,
@@ -11140,7 +11170,7 @@
           "for": 31,
           "against": 34
         },
-        "rank": 15
+        "rank": 16
       },
       {
         "team": {
@@ -11154,21 +11184,6 @@
         "goals": {
           "for": 22,
           "against": 41
-        },
-        "rank": 16
-      },
-      {
-        "team": {
-          "name": "Legia Warsaw"
-        },
-        "played": 23,
-        "win": 5,
-        "draw": 10,
-        "lose": 8,
-        "points": 25,
-        "goals": {
-          "for": 27,
-          "against": 29
         },
         "rank": 17
       },
@@ -14641,14 +14656,14 @@
         "team": {
           "name": "Polessya"
         },
-        "played": 9,
+        "played": 10,
         "win": 4,
         "draw": 3,
-        "lose": 2,
+        "lose": 3,
         "points": 15,
         "goals": {
-          "for": 11,
-          "against": 5
+          "for": 12,
+          "against": 7
         }
       },
       {
@@ -14746,14 +14761,14 @@
         "team": {
           "name": "Karpaty Lviv"
         },
-        "played": 9,
+        "played": 10,
         "win": 1,
-        "draw": 4,
+        "draw": 5,
         "lose": 4,
-        "points": 7,
+        "points": 8,
         "goals": {
-          "for": 10,
-          "against": 15
+          "for": 11,
+          "against": 16
         }
       },
       {
@@ -14851,6 +14866,21 @@
       {
         "rank": "4",
         "team": {
+          "name": "Dynamo Kyiv"
+        },
+        "played": 10,
+        "win": 5,
+        "draw": 3,
+        "lose": 2,
+        "points": 18,
+        "goals": {
+          "for": 22,
+          "against": 15
+        }
+      },
+      {
+        "rank": "5",
+        "team": {
           "name": "Metalist 1925"
         },
         "played": 9,
@@ -14861,21 +14891,6 @@
         "goals": {
           "for": 13,
           "against": 7
-        }
-      },
-      {
-        "rank": "5",
-        "team": {
-          "name": "Dynamo Kyiv"
-        },
-        "played": 9,
-        "win": 4,
-        "draw": 3,
-        "lose": 2,
-        "points": 15,
-        "goals": {
-          "for": 20,
-          "against": 14
         }
       },
       {
@@ -15001,6 +15016,21 @@
       {
         "rank": "14",
         "team": {
+          "name": "Kudrivka"
+        },
+        "played": 10,
+        "win": 1,
+        "draw": 2,
+        "lose": 7,
+        "points": 5,
+        "goals": {
+          "for": 8,
+          "against": 20
+        }
+      },
+      {
+        "rank": "15",
+        "team": {
           "name": "SK Poltava"
         },
         "played": 10,
@@ -15014,7 +15044,7 @@
         }
       },
       {
-        "rank": "15",
+        "rank": "16",
         "team": {
           "name": "Oleksandria"
         },
@@ -15026,21 +15056,6 @@
         "goals": {
           "for": 7,
           "against": 16
-        }
-      },
-      {
-        "rank": "16",
-        "team": {
-          "name": "Kudrivka"
-        },
-        "played": 9,
-        "win": 1,
-        "draw": 1,
-        "lose": 7,
-        "points": 4,
-        "goals": {
-          "for": 7,
-          "against": 19
         }
       }
     ],
@@ -15079,14 +15094,14 @@
         "team": {
           "name": "Polessya"
         },
-        "played": 18,
+        "played": 19,
         "win": 11,
         "draw": 3,
-        "lose": 4,
+        "lose": 5,
         "points": 36,
         "goals": {
-          "for": 31,
-          "against": 12
+          "for": 32,
+          "against": 14
         },
         "rank": 3
       },
@@ -15094,14 +15109,14 @@
         "team": {
           "name": "Dynamo Kyiv"
         },
-        "played": 18,
-        "win": 9,
+        "played": 19,
+        "win": 10,
         "draw": 5,
         "lose": 4,
-        "points": 32,
+        "points": 35,
         "goals": {
-          "for": 40,
-          "against": 21
+          "for": 42,
+          "against": 22
         },
         "rank": 4
       },
@@ -15199,14 +15214,14 @@
         "team": {
           "name": "Karpaty Lviv"
         },
-        "played": 18,
+        "played": 19,
         "win": 4,
-        "draw": 7,
+        "draw": 8,
         "lose": 7,
-        "points": 19,
+        "points": 20,
         "goals": {
-          "for": 20,
-          "against": 25
+          "for": 21,
+          "against": 26
         },
         "rank": 11
       },
@@ -15214,14 +15229,14 @@
         "team": {
           "name": "Kudrivka"
         },
-        "played": 18,
+        "played": 19,
         "win": 5,
-        "draw": 4,
+        "draw": 5,
         "lose": 9,
-        "points": 19,
+        "points": 20,
         "goals": {
-          "for": 23,
-          "against": 32
+          "for": 24,
+          "against": 33
         },
         "rank": 12
       },
@@ -37803,6 +37818,21 @@
       {
         "rank": "1",
         "team": {
+          "name": "Los Chankas"
+        },
+        "played": 3,
+        "win": 3,
+        "draw": 0,
+        "lose": 0,
+        "points": 9,
+        "goals": {
+          "for": 7,
+          "against": 3
+        }
+      },
+      {
+        "rank": "2",
+        "team": {
           "name": "Universitario"
         },
         "played": 3,
@@ -37816,7 +37846,7 @@
         }
       },
       {
-        "rank": "2",
+        "rank": "3",
         "team": {
           "name": "Cusco"
         },
@@ -37831,7 +37861,7 @@
         }
       },
       {
-        "rank": "3",
+        "rank": "4",
         "team": {
           "name": "Comerciantes U."
         },
@@ -37846,7 +37876,7 @@
         }
       },
       {
-        "rank": "4",
+        "rank": "5",
         "team": {
           "name": "FBC Melgar"
         },
@@ -37861,7 +37891,7 @@
         }
       },
       {
-        "rank": "5",
+        "rank": "6",
         "team": {
           "name": "Sport Huancayo"
         },
@@ -37873,21 +37903,6 @@
         "goals": {
           "for": 5,
           "against": 3
-        }
-      },
-      {
-        "rank": "6",
-        "team": {
-          "name": "Los Chankas"
-        },
-        "played": 2,
-        "win": 2,
-        "draw": 0,
-        "lose": 0,
-        "points": 6,
-        "goals": {
-          "for": 4,
-          "against": 2
         }
       },
       {
@@ -38182,14 +38197,14 @@
         "team": {
           "name": "Universitario"
         },
-        "played": 2,
+        "played": 3,
         "win": 0,
         "draw": 2,
-        "lose": 0,
+        "lose": 1,
         "points": 2,
         "goals": {
-          "for": 3,
-          "against": 3
+          "for": 4,
+          "against": 6
         }
       },
       {
@@ -38346,6 +38361,21 @@
     "total": [
       {
         "team": {
+          "name": "Los Chankas"
+        },
+        "played": 6,
+        "win": 4,
+        "draw": 2,
+        "lose": 0,
+        "points": 14,
+        "goals": {
+          "for": 11,
+          "against": 6
+        },
+        "rank": 1
+      },
+      {
+        "team": {
           "name": "Alianza Lima"
         },
         "played": 5,
@@ -38357,7 +38387,7 @@
           "for": 6,
           "against": 2
         },
-        "rank": 1
+        "rank": 2
       },
       {
         "team": {
@@ -38372,35 +38402,20 @@
           "for": 10,
           "against": 6
         },
-        "rank": 2
+        "rank": 3
       },
       {
         "team": {
           "name": "Universitario"
         },
-        "played": 5,
+        "played": 6,
         "win": 3,
         "draw": 2,
-        "lose": 0,
+        "lose": 1,
         "points": 11,
         "goals": {
-          "for": 8,
-          "against": 4
-        },
-        "rank": 3
-      },
-      {
-        "team": {
-          "name": "Los Chankas"
-        },
-        "played": 5,
-        "win": 3,
-        "draw": 2,
-        "lose": 0,
-        "points": 11,
-        "goals": {
-          "for": 8,
-          "against": 5
+          "for": 9,
+          "against": 7
         },
         "rank": 4
       },
@@ -39471,14 +39486,14 @@
         "team": {
           "name": "Rayo Zuliano"
         },
-        "played": 2,
+        "played": 3,
         "win": 1,
         "draw": 0,
-        "lose": 1,
+        "lose": 2,
         "points": 3,
         "goals": {
-          "for": 2,
-          "against": 2
+          "for": 3,
+          "against": 7
         }
       },
       {
@@ -39563,14 +39578,14 @@
         "team": {
           "name": "UCV"
         },
-        "played": 2,
-        "win": 2,
+        "played": 3,
+        "win": 3,
         "draw": 0,
         "lose": 0,
-        "points": 6,
+        "points": 9,
         "goals": {
-          "for": 5,
-          "against": 1
+          "for": 10,
+          "against": 2
         }
       },
       {
@@ -39774,14 +39789,14 @@
         "team": {
           "name": "UCV"
         },
-        "played": 5,
-        "win": 5,
+        "played": 6,
+        "win": 6,
         "draw": 0,
         "lose": 0,
-        "points": 15,
+        "points": 18,
         "goals": {
-          "for": 12,
-          "against": 4
+          "for": 17,
+          "against": 5
         },
         "rank": 1
       },
@@ -39819,14 +39834,14 @@
         "team": {
           "name": "Rayo Zuliano"
         },
-        "played": 5,
+        "played": 6,
         "win": 3,
         "draw": 0,
-        "lose": 2,
+        "lose": 3,
         "points": 9,
         "goals": {
-          "for": 7,
-          "against": 5
+          "for": 8,
+          "against": 10
         },
         "rank": 4
       },
@@ -50226,14 +50241,14 @@
         "team": {
           "name": "Al Ramtha"
         },
-        "played": 9,
+        "played": 10,
         "win": 5,
-        "draw": 3,
+        "draw": 4,
         "lose": 1,
-        "points": 18,
+        "points": 19,
         "goals": {
-          "for": 12,
-          "against": 5
+          "for": 13,
+          "against": 6
         }
       },
       {
@@ -50376,6 +50391,21 @@
       {
         "rank": "4",
         "team": {
+          "name": "Al Wihdat"
+        },
+        "played": 10,
+        "win": 4,
+        "draw": 3,
+        "lose": 3,
+        "points": 15,
+        "goals": {
+          "for": 9,
+          "against": 9
+        }
+      },
+      {
+        "rank": "5",
+        "team": {
           "name": "Al Hussein"
         },
         "played": 7,
@@ -50386,21 +50416,6 @@
         "goals": {
           "for": 14,
           "against": 5
-        }
-      },
-      {
-        "rank": "5",
-        "team": {
-          "name": "Al Wihdat"
-        },
-        "played": 9,
-        "win": 4,
-        "draw": 2,
-        "lose": 3,
-        "points": 14,
-        "goals": {
-          "for": 8,
-          "against": 8
         }
       },
       {
@@ -50514,14 +50529,14 @@
         "team": {
           "name": "Al Ramtha"
         },
-        "played": 18,
+        "played": 19,
         "win": 9,
-        "draw": 7,
+        "draw": 8,
         "lose": 2,
-        "points": 34,
+        "points": 35,
         "goals": {
-          "for": 24,
-          "against": 12
+          "for": 25,
+          "against": 13
         },
         "rank": 3
       },
@@ -50529,14 +50544,14 @@
         "team": {
           "name": "Al Wihdat"
         },
-        "played": 18,
+        "played": 19,
         "win": 10,
-        "draw": 3,
+        "draw": 4,
         "lose": 5,
-        "points": 33,
+        "points": 34,
         "goals": {
-          "for": 22,
-          "against": 14
+          "for": 23,
+          "against": 15
         },
         "rank": 4
       },
