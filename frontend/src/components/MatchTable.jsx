@@ -65,21 +65,65 @@ function StandingsPopup({ standings, homeTeam, awayTeam, position }) {
   );
 }
 
-// Shared GG Logic
-const calculateGGStatus = (leagueStandings, homeName, awayName) => {
-  if (!leagueStandings || !leagueStandings.total || !leagueStandings.home || !leagueStandings.away) {
-    return { color: 'grey', title: 'Insufficient Standings Data' };
+// Helper to find team stats globally across all leagues
+// Prioritizes domestic leagues over cups by checking games played
+const findTeamStatsGlobally = (allStandings, teamName, currentLeagueName) => {
+  let bestMatch = null;
+  let maxPlayed = -1;
+
+  // First, check current league if it exists
+  if (allStandings && allStandings[currentLeagueName]) {
+      const currentLeagueStats = allStandings[currentLeagueName];
+      const teamInCurrent = currentLeagueStats.total?.find(t => t.team.name === teamName);
+      if (teamInCurrent) {
+          bestMatch = { stats: teamInCurrent, league: currentLeagueName, detailed: currentLeagueStats };
+          maxPlayed = teamInCurrent.played;
+      }
   }
+
+  // If current league is a European Cup, OR if we didn't find the team, search globally
+  // We want to find the league where they have the MOST games played (likely domestic)
+  const isCup = currentLeagueName.includes('Europe') || currentLeagueName.includes('Champions') || currentLeagueName.includes('Europa') || currentLeagueName.includes('Conference');
+  
+  if ((isCup || !bestMatch) && allStandings) {
+      Object.entries(allStandings).forEach(([leagueName, leagueData]) => {
+          if (leagueName === currentLeagueName) return; // Already checked
+          
+          const team = leagueData.total?.find(t => t.team.name === teamName);
+          if (team) {
+              // If it's a cup match, we prioritize the league with most games played
+              if (team.played > maxPlayed) {
+                  maxPlayed = team.played;
+                  bestMatch = { stats: team, league: leagueName, detailed: leagueData };
+              }
+          }
+      });
+  }
+
+  return bestMatch; // Returns { stats, league, detailed } or null
+};
+
+// Shared GG Logic
+const calculateGGStatus = (allStandings, currentLeagueName, homeName, awayName) => {
+  const homeData = findTeamStatsGlobally(allStandings, homeName, currentLeagueName);
+  const awayData = findTeamStatsGlobally(allStandings, awayName, currentLeagueName);
+
+  if (!homeData || !awayData) {
+    return { color: 'grey', title: 'Team not found in any standings' };
+  }
+
+  const hLeague = homeData.detailed;
+  const aLeague = awayData.detailed;
 
   const findTeamStats = (list, teamName) => list?.find(row => row.team.name === teamName);
 
-  const hGen = findTeamStats(leagueStandings.total, homeName);
-  const hHome = findTeamStats(leagueStandings.home, homeName);
-  const aGen = findTeamStats(leagueStandings.total, awayName);
-  const aAway = findTeamStats(leagueStandings.away, awayName);
+  const hGen = findTeamStats(hLeague.total, homeName);
+  const hHome = findTeamStats(hLeague.home, homeName);
+  const aGen = findTeamStats(aLeague.total, awayName);
+  const aAway = findTeamStats(aLeague.away, awayName);
 
   if (!hGen || !hHome || !aGen || !aAway) {
-    return { color: 'grey', title: 'Team not found in standings' };
+    return { color: 'grey', title: 'Insufficient data' };
   }
 
   const getAvgs = (row) => {
@@ -102,6 +146,7 @@ const calculateGGStatus = (leagueStandings, homeName, awayName) => {
   const statsData = {
     home: {
       name: homeName,
+      league: homeData.league,
       genGF: hGenGF.toFixed(2),
       genGA: hGenGA.toFixed(2),
       homeGF: hHomeGF.toFixed(2),
@@ -109,6 +154,7 @@ const calculateGGStatus = (leagueStandings, homeName, awayName) => {
     },
     away: {
       name: awayName,
+      league: awayData.league,
       genGF: aGenGF.toFixed(2),
       genGA: aGenGA.toFixed(2),
       awayGF: aAwayGF.toFixed(2),
@@ -124,18 +170,24 @@ const calculateGGStatus = (leagueStandings, homeName, awayName) => {
 };
 
 // Shared Over 2.5 Logic
-const calculateOver25Status = (leagueStandings, homeName, awayName) => {
-  if (!leagueStandings || !leagueStandings.total || !leagueStandings.home || !leagueStandings.away) {
-    return { color: 'grey', title: 'Insufficient Standings Data' };
+const calculateOver25Status = (allStandings, currentLeagueName, homeName, awayName) => {
+  const homeData = findTeamStatsGlobally(allStandings, homeName, currentLeagueName);
+  const awayData = findTeamStatsGlobally(allStandings, awayName, currentLeagueName);
+
+  if (!homeData || !awayData) {
+    return { color: 'grey', title: 'Team not found in any standings' };
   }
+
+  const hLeague = homeData.detailed;
+  const aLeague = awayData.detailed;
 
   const findTeamStats = (list, teamName) => list?.find(row => row.team.name === teamName);
 
-  const hHome = findTeamStats(leagueStandings.home, homeName);
-  const aAway = findTeamStats(leagueStandings.away, awayName);
+  const hHome = findTeamStats(hLeague.home, homeName);
+  const aAway = findTeamStats(aLeague.away, awayName);
 
   if (!hHome || !aAway) {
-    return { color: 'grey', title: 'Team not found in standings' };
+    return { color: 'grey', title: 'Insufficient data' };
   }
 
   const getAvgs = (row) => {
@@ -158,12 +210,14 @@ const calculateOver25Status = (leagueStandings, homeName, awayName) => {
   const statsData = {
     home: {
       name: homeName,
+      league: homeData.league,
       totalAvg: homeTotalAvg.toFixed(2),
       homeGF: hHomeGF.toFixed(2),
       homeGA: hHomeGA.toFixed(2)
     },
     away: {
       name: awayName,
+      league: awayData.league,
       totalAvg: awayTotalAvg.toFixed(2),
       awayGF: aAwayGF.toFixed(2),
       awayGA: aAwayGA.toFixed(2)
@@ -178,7 +232,7 @@ const calculateOver25Status = (leagueStandings, homeName, awayName) => {
   return { color: 'green', title: 'Strong Over 2.5', stats: statsData };
 };
 
-function StrategyVignette({ homeTeam, awayTeam, homeStats, awayStats, ggStatus, overStatus, leagueStandings }) {
+function StrategyVignette({ homeTeam, awayTeam, homeStats, awayStats, ggStatus, overStatus, allStandings, currentLeagueName }) {
   if (!homeStats || !awayStats) {
     return (
       <div className="vignette-content">
@@ -202,14 +256,16 @@ function StrategyVignette({ homeTeam, awayTeam, homeStats, awayStats, ggStatus, 
   // Use pre-calculated projected goals from Over2.5 logic if available
   const projectedGoals = overStatus?.stats?.val || 'N/A';
 
-  // Helper to find team in standings
-  const findTeamInStandings = (standings, teamName) => {
-    if (!standings || !standings.total) return null;
-    return standings.total.find(t => t.team.name === teamName);
-  };
+  const homeData = findTeamStatsGlobally(allStandings, homeTeam, currentLeagueName);
+  const awayData = findTeamStatsGlobally(allStandings, awayTeam, currentLeagueName);
 
-  const homeStanding = findTeamInStandings(leagueStandings, homeTeam);
-  const awayStanding = findTeamInStandings(leagueStandings, awayTeam);
+  const homeStanding = homeData?.stats;
+  const awayStanding = awayData?.stats;
+  const homeLeagueName = homeData?.league;
+  const awayLeagueName = awayData?.league;
+  
+  const hLeague = homeData?.detailed;
+  const aLeague = awayData?.detailed;
 
   // --- Correct Score Prediction Logic ---
   let predictedScore = "N/A";
@@ -220,8 +276,8 @@ function StrategyVignette({ homeTeam, awayTeam, homeStats, awayStats, ggStatus, 
     // or fallback to the total table data we have in homeStanding variable (which is from 'total' usually).
     
     // Actually, leagueStandings has .home and .away arrays!
-    const hHomeTable = leagueStandings.home?.find(t => t.team.name === homeTeam);
-    const aAwayTable = leagueStandings.away?.find(t => t.team.name === awayTeam);
+    const hHomeTable = hLeague?.home?.find(t => t.team.name === homeTeam);
+    const aAwayTable = aLeague?.away?.find(t => t.team.name === awayTeam);
 
     if (hHomeTable && aAwayTable && hHomeTable.played > 0 && aAwayTable.played > 0) {
         // Method 1: Simple Average of Attack vs Defense
@@ -296,7 +352,7 @@ function StrategyVignette({ homeTeam, awayTeam, homeStats, awayStats, ggStatus, 
                   </div>
                   <div className="standings-row">
                     <span className="rank-badge">{homeStanding.rank}</span>
-                    <span className="team-name">{homeStanding.team.name}</span>
+                    <span className="team-name">{homeStanding.team.name} <small>({homeLeagueName})</small></span>
                     <span className="team-pts">{homeStanding.points}</span>
                     <span className="team-goals">{homeStanding.goals.for}:{homeStanding.goals.against}</span>
                   </div>
@@ -366,7 +422,7 @@ function StrategyVignette({ homeTeam, awayTeam, homeStats, awayStats, ggStatus, 
   );
 }
 
-function MatchRow({ match, leagueStandings, onMove, onLeave }) {
+function MatchRow({ match, leagueStandings, allStandings, onMove, onLeave }) {
   const [showDetails, setShowDetails] = useState(false);
 
   const { homeTeam, homePosition, awayTeam, awayPosition, league, date, predictions, stats, analysis } = match;
@@ -401,11 +457,11 @@ function MatchRow({ match, leagueStandings, onMove, onLeave }) {
   const ggClass = predictions?.GG ? 'prediction-yes' : 'prediction-no';
   const overClass = predictions?.Over25 ? 'prediction-yes' : 'prediction-no';
 
-  // Calculate GG Status using shared logic
-  const ggStatus = calculateGGStatus(leagueStandings, homeName, awayName);
+  // Calculate GG Status using shared logic with GLOBAL lookup
+  const ggStatus = calculateGGStatus(allStandings, league, homeName, awayName);
   
-  // Calculate Over 2.5 Status
-  const overStatus = calculateOver25Status(leagueStandings, homeName, awayName);
+  // Calculate Over 2.5 Status with GLOBAL lookup
+  const overStatus = calculateOver25Status(allStandings, league, homeName, awayName);
 
   // Helper to show rank if available
   const getRank = (pos) => pos && pos !== 'N/A' ? ` [${pos}]` : '';
@@ -518,7 +574,8 @@ function MatchRow({ match, leagueStandings, onMove, onLeave }) {
               awayStats={awayStats} 
               ggStatus={ggStatus} 
               overStatus={overStatus}
-              leagueStandings={leagueStandings}
+              allStandings={allStandings}
+              currentLeagueName={league}
             />
           </td>
         </tr>
@@ -578,22 +635,23 @@ export default function MatchTable({ matches, standings }) {
     if (!filterGG && !filterOver25) return true; // No filter active
 
     // We need to calculate statuses here to filter
-    const leagueStandings = standings ? standings[leagueName || match.league] : null;
-    if (!leagueStandings) return false;
+    // FIX: Pass FULL standings object and current league name
+    if (!standings) return false;
 
     const homeName = typeof match.homeTeam === 'object' ? match.homeTeam.team_name : match.homeTeam;
     const awayName = typeof match.awayTeam === 'object' ? match.awayTeam.team_name : match.awayTeam;
+    const currentLeague = leagueName || match.league;
 
     let passesGG = true;
     if (filterGG) {
-      const status = calculateGGStatus(leagueStandings, homeName, awayName);
+      const status = calculateGGStatus(standings, currentLeague, homeName, awayName);
       if (status.color === 'red' || status.color === 'grey') passesGG = false;
       else passesGG = filterColors.includes(status.color);
     }
 
     let passesOver = true;
     if (filterOver25) {
-      const status = calculateOver25Status(leagueStandings, homeName, awayName);
+      const status = calculateOver25Status(standings, currentLeague, homeName, awayName);
       if (status.color === 'red' || status.color === 'grey') passesOver = false;
       else passesOver = filterColors.includes(status.color);
     }
@@ -685,6 +743,7 @@ export default function MatchTable({ matches, standings }) {
                                       key={match.fixture_id} 
                                       match={match} 
                                       leagueStandings={standings ? standings[leagueName] : null} 
+                                      allStandings={standings}
                                       onMove={handleRowMove}
                                       onLeave={handleRowLeave}
                                   />
@@ -714,6 +773,7 @@ export default function MatchTable({ matches, standings }) {
                       key={match.fixture_id} 
                       match={match} 
                       leagueStandings={standings ? standings[match.league] : null} 
+                      allStandings={standings}
                       onMove={handleRowMove}
                       onLeave={handleRowLeave}
                     />

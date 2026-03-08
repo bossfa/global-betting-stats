@@ -98,7 +98,12 @@ const LEAGUE_URLS = {
   'Indonesia - Liga 1': 'https://www.soccerstats.com/homeaway.asp?league=indonesia',
   'Singapore - Premier League': 'https://www.soccerstats.com/homeaway.asp?league=singapore',
   'Malaysia - Super League': 'https://www.soccerstats.com/homeaway.asp?league=malaysia',
-  'Vietnam - V.League 1': 'https://www.soccerstats.com/homeaway.asp?league=vietnam'
+  'Vietnam - V.League 1': 'https://www.soccerstats.com/homeaway.asp?league=vietnam',
+
+  // European Cups
+  'Europe - Champions League': 'https://www.soccerstats.com/homeaway.asp?league=championsleague',
+  'Europe - Europa League': 'https://www.soccerstats.com/homeaway.asp?league=europaleague',
+  'Europe - Conference League': 'https://www.soccerstats.com/homeaway.asp?league=conferenceleague'
 };
 
 /**
