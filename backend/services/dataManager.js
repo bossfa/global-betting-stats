@@ -34,8 +34,12 @@ async function syncDailyData(date) {
       for (const [leagueName, url] of Object.entries(scraper.LEAGUE_URLS)) {
           syncStatus.currentAction = `Scraping standings: ${leagueName} (${date})`;
           console.log(`Scraping standings for ${leagueName}...`);
-          const standings = await scraper.scrapeLeagueStandings(leagueName);
-          leagueStandings[leagueName] = standings;
+          try {
+              const standings = await scraper.scrapeLeagueStandings(leagueName);
+              leagueStandings[leagueName] = standings;
+          } catch (standingsErr) {
+              console.warn(`Failed to scrape standings for ${leagueName}: ${standingsErr.message}. Continuing...`);
+          }
           // Sleep to be polite
           await new Promise(r => setTimeout(r, 1000));
       }
@@ -60,11 +64,17 @@ async function syncDailyData(date) {
       // Save Matches
       syncStatus.currentAction = `Saving matches for ${date}`;
       const matchesPath = path.join(DATA_DIR, `matches_${date}.json`);
-      if (fs.existsSync(matchesPath)) {
-          fs.unlinkSync(matchesPath);
+      
+      try {
+        if (fs.existsSync(matchesPath)) {
+            await fs.promises.unlink(matchesPath);
+        }
+        await fs.promises.writeFile(matchesPath, JSON.stringify(fixtures, null, 2));
+        console.log(`Successfully saved new matches to ${matchesPath}`);
+      } catch (saveError) {
+        console.error(`Error saving matches for ${date}:`, saveError);
+        throw new Error(`Failed to save matches: ${saveError.message}`);
       }
-      fs.writeFileSync(matchesPath, JSON.stringify(fixtures, null, 2));
-      console.log(`Successfully saved new matches to ${matchesPath}`);
       
       // 3. Save Files
       // We return the standings keys for info, but the main goal is done.
@@ -149,8 +159,16 @@ async function prefetchWeekData() {
             const matchesPath = path.join(DATA_DIR, `matches_${dateStr}.json`);
             
             if (fs.existsSync(matchesPath)) {
-                console.log(`[BACKGROUND] Data for ${dateStr} already exists. Skipping.`);
-                continue;
+                try {
+                    // Validate JSON integrity
+                    const content = await fs.promises.readFile(matchesPath, 'utf-8');
+                    JSON.parse(content);
+                    console.log(`[BACKGROUND] Data for ${dateStr} already exists and is valid. Skipping.`);
+                    continue;
+                } catch (validationErr) {
+                    console.warn(`[BACKGROUND] Data for ${dateStr} is corrupted or invalid. Re-syncing...`);
+                    // Fall through to sync
+                }
             }
 
             syncStatus.currentAction = `Syncing missing data for ${dateStr}`;
@@ -163,6 +181,9 @@ async function prefetchWeekData() {
                 await new Promise(r => setTimeout(r, 5000)); 
             } catch (err) {
                 console.error(`[BACKGROUND] Failed to sync ${dateStr}: ${err.message}`);
+                syncStatus.currentAction = `Error syncing ${dateStr}: ${err.message}`;
+                // Wait a bit even on error to avoid rapid failure loops
+                await new Promise(r => setTimeout(r, 2000));
             }
         }
         console.log('[BACKGROUND] 7-day prefetch completed.');

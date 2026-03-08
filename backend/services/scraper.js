@@ -11,6 +11,11 @@ const LEAGUE_URLS = {
   'Germany - Bundesliga': 'https://www.soccerstats.com/homeaway.asp?league=germany',
   'France - Ligue 1': 'https://www.soccerstats.com/homeaway.asp?league=france',
   
+  // European Cups
+  'Europe - Champions League': 'https://www.soccerstats.com/homeaway.asp?league=championsleague',
+  'Europe - Europa League': 'https://www.soccerstats.com/homeaway.asp?league=europaleague',
+  'Europe - Conference League': 'https://www.soccerstats.com/homeaway.asp?league=conferenceleague',
+  
   // Other European Leagues
   'Netherlands - Eredivisie': 'https://www.soccerstats.com/homeaway.asp?league=netherlands',
   'Portugal - Primeira Liga': 'https://www.soccerstats.com/homeaway.asp?league=portugal',
