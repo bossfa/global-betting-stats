@@ -22,6 +22,62 @@ if (!fs.existsSync(DATA_DIR)) {
   fs.mkdirSync(DATA_DIR);
 }
 
+function formatDateUTC(dateObj) {
+    return dateObj.toISOString().split('T')[0];
+}
+
+function startOfTodayUTC() {
+    const now = new Date();
+    return new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()));
+}
+
+function addDaysUTC(dateObj, days) {
+    const d = new Date(dateObj);
+    d.setUTCDate(d.getUTCDate() + days);
+    return d;
+}
+
+async function isValidJsonFile(filePath) {
+    if (!fs.existsSync(filePath)) return false;
+    try {
+        const content = await fs.promises.readFile(filePath, 'utf-8');
+        JSON.parse(content);
+        return true;
+    } catch {
+        return false;
+    }
+}
+
+function extractDateFromDatedFilename(filename, prefix) {
+    if (!filename.startsWith(prefix)) return null;
+    if (!filename.endsWith('.json')) return null;
+    const datePart = filename.slice(prefix.length, -'.json'.length);
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(datePart)) return null;
+    return datePart;
+}
+
+async function cleanupDataOutsideWindow(keepDatesSet) {
+    const files = await fs.promises.readdir(DATA_DIR);
+    const deletions = [];
+
+    for (const filename of files) {
+        const matchDate = extractDateFromDatedFilename(filename, 'matches_');
+        const standingsDate = extractDateFromDatedFilename(filename, 'standings_');
+        const date = matchDate || standingsDate;
+
+        if (!date) continue;
+        if (keepDatesSet.has(date)) continue;
+
+        deletions.push(fs.promises.unlink(path.join(DATA_DIR, filename)));
+    }
+
+    if (deletions.length > 0) {
+        await Promise.all(deletions);
+    }
+
+    return deletions.length;
+}
+
 /**
  * Syncs data for a specific date using SCRAPING.
  * 1. Scrapes Standings for Top Leagues (Home/Away tables)
@@ -152,38 +208,53 @@ async function prefetchWeekData() {
         return;
     }
 
+    const today = startOfTodayUTC();
+    const desiredDates = Array.from({ length: 8 }, (_, i) => formatDateUTC(addDaysUTC(today, i)));
+    const desiredSet = new Set(desiredDates);
+
+    let needsWork = false;
+    for (const dateStr of desiredDates) {
+        const matchesPath = path.join(DATA_DIR, `matches_${dateStr}.json`);
+        const standingsPath = path.join(DATA_DIR, `standings_${dateStr}.json`);
+        const okMatches = await isValidJsonFile(matchesPath);
+        const okStandings = await isValidJsonFile(standingsPath);
+        if (!okMatches || !okStandings) {
+            needsWork = true;
+            break;
+        }
+    }
+
+    if (!needsWork) {
+        await cleanupDataOutsideWindow(desiredSet);
+        return;
+    }
+
     syncStatus.isSyncing = true;
     syncStatus.jobType = 'prefetch';
-    syncStatus.currentAction = 'Starting 7-day prefetch...';
-    console.log('[BACKGROUND] Starting 7-day prefetch...');
-    
-    const today = new Date();
+    syncStatus.currentAction = 'Starting rolling prefetch...';
+    console.log('[BACKGROUND] Starting rolling prefetch...');
     
     try {
-        for (let i = 0; i < 7; i++) {
+        await cleanupDataOutsideWindow(desiredSet);
+
+        for (let i = 0; i < desiredDates.length; i++) {
             if (manualQueue.length > 0) {
                 console.log('[BACKGROUND] Manual sync queued. Pausing prefetch.');
                 break;
             }
 
-            const nextDate = new Date(today);
-            nextDate.setDate(today.getDate() + i);
-            const dateStr = nextDate.toISOString().split('T')[0];
+            const dateStr = desiredDates[i];
             
             syncStatus.currentAction = `Checking data for ${dateStr}`;
             const matchesPath = path.join(DATA_DIR, `matches_${dateStr}.json`);
+            const standingsPath = path.join(DATA_DIR, `standings_${dateStr}.json`);
             
-            if (fs.existsSync(matchesPath)) {
-                try {
-                    // Validate JSON integrity
-                    const content = await fs.promises.readFile(matchesPath, 'utf-8');
-                    JSON.parse(content);
-                    console.log(`[BACKGROUND] Data for ${dateStr} already exists and is valid. Skipping.`);
-                    continue;
-                } catch (validationErr) {
-                    console.warn(`[BACKGROUND] Data for ${dateStr} is corrupted or invalid. Re-syncing...`);
-                    // Fall through to sync
-                }
+            const okMatches = await isValidJsonFile(matchesPath);
+            const okStandings = await isValidJsonFile(standingsPath);
+
+            if (okMatches && okStandings) {
+                console.log(`[BACKGROUND] Data for ${dateStr} already exists and is valid. Skipping.`);
+                continue;
             }
 
             syncStatus.currentAction = `Syncing missing data for ${dateStr}`;
@@ -201,7 +272,7 @@ async function prefetchWeekData() {
                 await new Promise(r => setTimeout(r, 2000));
             }
         }
-        console.log('[BACKGROUND] 7-day prefetch completed.');
+        console.log('[BACKGROUND] Rolling prefetch completed.');
     } finally {
         syncStatus.isSyncing = false;
         syncStatus.currentAction = 'Idle';
