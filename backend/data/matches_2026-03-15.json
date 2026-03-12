@@ -1,0 +1,2340 @@
+[
+  {
+    "fixture_id": "2026-03-15-CrystalPalace-LeedsUtd",
+    "date": "2026-03-15",
+    "time": "14:00",
+    "league": "England - Premier League",
+    "country": "England",
+    "homeTeam": {
+      "team_name": "Crystal Palace"
+    },
+    "awayTeam": {
+      "team_name": "Leeds Utd"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-ManchesterUtd-AstonVilla",
+    "date": "2026-03-15",
+    "time": "14:00",
+    "league": "England - Premier League",
+    "country": "England",
+    "homeTeam": {
+      "team_name": "Manchester Utd"
+    },
+    "awayTeam": {
+      "team_name": "Aston Villa"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-NottmForest-Fulham",
+    "date": "2026-03-15",
+    "time": "14:00",
+    "league": "England - Premier League",
+    "country": "England",
+    "homeTeam": {
+      "team_name": "Nottm Forest"
+    },
+    "awayTeam": {
+      "team_name": "Fulham"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Liverpool-Tottenham",
+    "date": "2026-03-15",
+    "time": "16:30",
+    "league": "England - Premier League",
+    "country": "England",
+    "homeTeam": {
+      "team_name": "Liverpool"
+    },
+    "awayTeam": {
+      "team_name": "Tottenham"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-ParisSG-Nantes",
+    "date": "2026-03-15",
+    "time": "00:00",
+    "league": "France - Ligue 1",
+    "country": "France",
+    "homeTeam": {
+      "team_name": "Paris SG"
+    },
+    "awayTeam": {
+      "team_name": "Nantes"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Strasbourg-ParisFC",
+    "date": "2026-03-15",
+    "time": "14:00",
+    "league": "France - Ligue 1",
+    "country": "France",
+    "homeTeam": {
+      "team_name": "Strasbourg"
+    },
+    "awayTeam": {
+      "team_name": "Paris FC"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-LeHavre-Lyon",
+    "date": "2026-03-15",
+    "time": "16:15",
+    "league": "France - Ligue 1",
+    "country": "France",
+    "homeTeam": {
+      "team_name": "Le Havre"
+    },
+    "awayTeam": {
+      "team_name": "Lyon"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Metz-Toulouse",
+    "date": "2026-03-15",
+    "time": "16:15",
+    "league": "France - Ligue 1",
+    "country": "France",
+    "homeTeam": {
+      "team_name": "Metz"
+    },
+    "awayTeam": {
+      "team_name": "Toulouse"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Rennes-Lille",
+    "date": "2026-03-15",
+    "time": "19:45",
+    "league": "France - Ligue 1",
+    "country": "France",
+    "homeTeam": {
+      "team_name": "Rennes"
+    },
+    "awayTeam": {
+      "team_name": "Lille"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-WerderBremen-FSVMainz",
+    "date": "2026-03-15",
+    "time": "14:30",
+    "league": "Germany - Bundesliga",
+    "country": "Germany",
+    "homeTeam": {
+      "team_name": "Werder Bremen"
+    },
+    "awayTeam": {
+      "team_name": "FSV Mainz"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Freiburg-UnionBerlin",
+    "date": "2026-03-15",
+    "time": "16:30",
+    "league": "Germany - Bundesliga",
+    "country": "Germany",
+    "homeTeam": {
+      "team_name": "Freiburg"
+    },
+    "awayTeam": {
+      "team_name": "Union Berlin"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Stuttgart-RBLeipzig",
+    "date": "2026-03-15",
+    "time": "18:30",
+    "league": "Germany - Bundesliga",
+    "country": "Germany",
+    "homeTeam": {
+      "team_name": "Stuttgart"
+    },
+    "awayTeam": {
+      "team_name": "RB Leipzig"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Mallorca-Espanyol",
+    "date": "2026-03-15",
+    "time": "13:00",
+    "league": "Spain - La Liga",
+    "country": "Spain",
+    "homeTeam": {
+      "team_name": "Mallorca"
+    },
+    "awayTeam": {
+      "team_name": "Espanyol"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-FCBarcelona-SevillaFC",
+    "date": "2026-03-15",
+    "time": "15:15",
+    "league": "Spain - La Liga",
+    "country": "Spain",
+    "homeTeam": {
+      "team_name": "FC Barcelona"
+    },
+    "awayTeam": {
+      "team_name": "Sevilla FC"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-RealBetis-CeltaVigo",
+    "date": "2026-03-15",
+    "time": "17:30",
+    "league": "Spain - La Liga",
+    "country": "Spain",
+    "homeTeam": {
+      "team_name": "Real Betis"
+    },
+    "awayTeam": {
+      "team_name": "Celta Vigo"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-RealSociedad-Osasuna",
+    "date": "2026-03-15",
+    "time": "20:00",
+    "league": "Spain - La Liga",
+    "country": "Spain",
+    "homeTeam": {
+      "team_name": "Real Sociedad"
+    },
+    "awayTeam": {
+      "team_name": "Osasuna"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-HellasVerona-Genoa",
+    "date": "2026-03-15",
+    "time": "11:30",
+    "league": "Italy - Serie A",
+    "country": "Italy",
+    "homeTeam": {
+      "team_name": "Hellas Verona"
+    },
+    "awayTeam": {
+      "team_name": "Genoa"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Pisa-Cagliari",
+    "date": "2026-03-15",
+    "time": "14:00",
+    "league": "Italy - Serie A",
+    "country": "Italy",
+    "homeTeam": {
+      "team_name": "Pisa"
+    },
+    "awayTeam": {
+      "team_name": "Cagliari"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Sassuolo-Bologna",
+    "date": "2026-03-15",
+    "time": "14:00",
+    "league": "Italy - Serie A",
+    "country": "Italy",
+    "homeTeam": {
+      "team_name": "Sassuolo"
+    },
+    "awayTeam": {
+      "team_name": "Bologna"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Como-ASRoma",
+    "date": "2026-03-15",
+    "time": "17:00",
+    "league": "Italy - Serie A",
+    "country": "Italy",
+    "homeTeam": {
+      "team_name": "Como"
+    },
+    "awayTeam": {
+      "team_name": "AS Roma"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Lazio-ACMilan",
+    "date": "2026-03-15",
+    "time": "19:45",
+    "league": "Italy - Serie A",
+    "country": "Italy",
+    "homeTeam": {
+      "team_name": "Lazio"
+    },
+    "awayTeam": {
+      "team_name": "AC Milan"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-CasaPia-SportingBraga",
+    "date": "2026-03-15",
+    "time": "00:00",
+    "league": "Portugal - Primeira Liga",
+    "country": "Portugal",
+    "homeTeam": {
+      "team_name": "Casa Pia"
+    },
+    "awayTeam": {
+      "team_name": "Sporting Braga"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-SportingCP-Tondela",
+    "date": "2026-03-15",
+    "time": "pp.",
+    "league": "Portugal - Primeira Liga",
+    "country": "Portugal",
+    "homeTeam": {
+      "team_name": "Sporting CP"
+    },
+    "awayTeam": {
+      "team_name": "Tondela"
+    },
+    "status": "FT"
+  },
+  {
+    "fixture_id": "2026-03-15-AVS-SantaClara",
+    "date": "2026-03-15",
+    "time": "15:30",
+    "league": "Portugal - Primeira Liga",
+    "country": "Portugal",
+    "homeTeam": {
+      "team_name": "AVS"
+    },
+    "awayTeam": {
+      "team_name": "Santa Clara"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Nacional-Estoril",
+    "date": "2026-03-15",
+    "time": "15:30",
+    "league": "Portugal - Primeira Liga",
+    "country": "Portugal",
+    "homeTeam": {
+      "team_name": "Nacional"
+    },
+    "awayTeam": {
+      "team_name": "Estoril"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-RioAve-EstrelaAmadora",
+    "date": "2026-03-15",
+    "time": "18:00",
+    "league": "Portugal - Primeira Liga",
+    "country": "Portugal",
+    "homeTeam": {
+      "team_name": "Rio Ave"
+    },
+    "awayTeam": {
+      "team_name": "Estrela Amadora"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-FCPorto-Moreirense",
+    "date": "2026-03-15",
+    "time": "20:30",
+    "league": "Portugal - Primeira Liga",
+    "country": "Portugal",
+    "homeTeam": {
+      "team_name": "FC Porto"
+    },
+    "awayTeam": {
+      "team_name": "Moreirense"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-FCTwente-FCUtrecht",
+    "date": "2026-03-15",
+    "time": "11:15",
+    "league": "Netherlands - Eredivisie",
+    "country": "Netherlands",
+    "homeTeam": {
+      "team_name": "FC Twente"
+    },
+    "awayTeam": {
+      "team_name": "FC Utrecht"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-AZAlkmaar-HeraclesAlmelo",
+    "date": "2026-03-15",
+    "time": "13:30",
+    "league": "Netherlands - Eredivisie",
+    "country": "Netherlands",
+    "homeTeam": {
+      "team_name": "AZ Alkmaar"
+    },
+    "awayTeam": {
+      "team_name": "Heracles Almelo"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Feyenoord-Excelsior",
+    "date": "2026-03-15",
+    "time": "13:30",
+    "league": "Netherlands - Eredivisie",
+    "country": "Netherlands",
+    "homeTeam": {
+      "team_name": "Feyenoord"
+    },
+    "awayTeam": {
+      "team_name": "Excelsior"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-GoAheadEagles-NACBreda",
+    "date": "2026-03-15",
+    "time": "15:45",
+    "league": "Netherlands - Eredivisie",
+    "country": "Netherlands",
+    "homeTeam": {
+      "team_name": "Go Ahead Eagles"
+    },
+    "awayTeam": {
+      "team_name": "NAC Breda"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Kifisia-Volos",
+    "date": "2026-03-15",
+    "time": "14:00",
+    "league": "Greece - Premiership",
+    "country": "Greece",
+    "homeTeam": {
+      "team_name": "Kifisia"
+    },
+    "awayTeam": {
+      "team_name": "Volos"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-PAOK-Levadiakos",
+    "date": "2026-03-15",
+    "time": "16:00",
+    "league": "Greece - Premiership",
+    "country": "Greece",
+    "homeTeam": {
+      "team_name": "PAOK"
+    },
+    "awayTeam": {
+      "team_name": "Levadiakos"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Atromitos-AEKAthens",
+    "date": "2026-03-15",
+    "time": "17:30",
+    "league": "Greece - Premiership",
+    "country": "Greece",
+    "homeTeam": {
+      "team_name": "Atromitos"
+    },
+    "awayTeam": {
+      "team_name": "AEK Athens"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Panathinaikos-Panetolikos",
+    "date": "2026-03-15",
+    "time": "19:00",
+    "league": "Greece - Premiership",
+    "country": "Greece",
+    "homeTeam": {
+      "team_name": "Panathinaikos"
+    },
+    "awayTeam": {
+      "team_name": "Panetolikos"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-KRCGenk-Sint-Truiden",
+    "date": "2026-03-15",
+    "time": "12:30",
+    "league": "Belgium - Jupiler Pro League",
+    "country": "Belgium",
+    "homeTeam": {
+      "team_name": "KRC Genk"
+    },
+    "awayTeam": {
+      "team_name": "Sint-Truiden"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Antwerp-StandardLiege",
+    "date": "2026-03-15",
+    "time": "15:00",
+    "league": "Belgium - Jupiler Pro League",
+    "country": "Belgium",
+    "homeTeam": {
+      "team_name": "Antwerp"
+    },
+    "awayTeam": {
+      "team_name": "Standard Liege"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-KVMechelen-Anderlecht",
+    "date": "2026-03-15",
+    "time": "17:30",
+    "league": "Belgium - Jupiler Pro League",
+    "country": "Belgium",
+    "homeTeam": {
+      "team_name": "KV Mechelen"
+    },
+    "awayTeam": {
+      "team_name": "Anderlecht"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-CercleBrugge-LaLouviere",
+    "date": "2026-03-15",
+    "time": "18:15",
+    "league": "Belgium - Jupiler Pro League",
+    "country": "Belgium",
+    "homeTeam": {
+      "team_name": "Cercle Brugge"
+    },
+    "awayTeam": {
+      "team_name": "La Louviere"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-St.Mirren-Rangers",
+    "date": "2026-03-15",
+    "time": "12:00",
+    "league": "Scotland - Premiership",
+    "country": "Scotland",
+    "homeTeam": {
+      "team_name": "St. Mirren"
+    },
+    "awayTeam": {
+      "team_name": "Rangers"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-DundeeFC-DundeeUtd",
+    "date": "2026-03-15",
+    "time": "14:00",
+    "league": "Scotland - Premiership",
+    "country": "Scotland",
+    "homeTeam": {
+      "team_name": "Dundee FC"
+    },
+    "awayTeam": {
+      "team_name": "Dundee Utd"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Salzburg-RapidWien",
+    "date": "2026-03-15",
+    "time": "13:30",
+    "league": "Austria - Bundesliga",
+    "country": "Austria",
+    "homeTeam": {
+      "team_name": "Salzburg"
+    },
+    "awayTeam": {
+      "team_name": "Rapid Wien"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-AustriaWien-SturmGraz",
+    "date": "2026-03-15",
+    "time": "16:00",
+    "league": "Austria - Bundesliga",
+    "country": "Austria",
+    "homeTeam": {
+      "team_name": "Austria Wien"
+    },
+    "awayTeam": {
+      "team_name": "Sturm Graz"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Kasimpasa-Eyupspor",
+    "date": "2026-03-15",
+    "time": "13:00",
+    "league": "Turkey - Super Lig",
+    "country": "Turkey",
+    "homeTeam": {
+      "team_name": "Kasimpasa"
+    },
+    "awayTeam": {
+      "team_name": "Eyupspor"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Genclerbirligi-Besiktas",
+    "date": "2026-03-15",
+    "time": "17:00",
+    "league": "Turkey - Super Lig",
+    "country": "Turkey",
+    "homeTeam": {
+      "team_name": "Genclerbirligi"
+    },
+    "awayTeam": {
+      "team_name": "Besiktas"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Samsunspor-Kayserispor",
+    "date": "2026-03-15",
+    "time": "17:00",
+    "league": "Turkey - Super Lig",
+    "country": "Turkey",
+    "homeTeam": {
+      "team_name": "Samsunspor"
+    },
+    "awayTeam": {
+      "team_name": "Kayserispor"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-ArkaGdynia-WidzewLodz",
+    "date": "2026-03-15",
+    "time": "11:15",
+    "league": "Poland - Ekstraklasa",
+    "country": "Poland",
+    "homeTeam": {
+      "team_name": "Arka Gdynia"
+    },
+    "awayTeam": {
+      "team_name": "Widzew Lodz"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-ZaglebieLubin-LechPoznan",
+    "date": "2026-03-15",
+    "time": "13:45",
+    "league": "Poland - Ekstraklasa",
+    "country": "Poland",
+    "homeTeam": {
+      "team_name": "Zaglebie Lubin"
+    },
+    "awayTeam": {
+      "team_name": "Lech Poznan"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-GornikZabrze-RakowC.",
+    "date": "2026-03-15",
+    "time": "16:30",
+    "league": "Poland - Ekstraklasa",
+    "country": "Poland",
+    "homeTeam": {
+      "team_name": "Gornik Zabrze"
+    },
+    "awayTeam": {
+      "team_name": "Rakow C."
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-HajdukSplit-Lok.Zagreb",
+    "date": "2026-03-15",
+    "time": "14:00",
+    "league": "Croatia - 1. HNL",
+    "country": "Croatia",
+    "homeTeam": {
+      "team_name": "Hajduk Split"
+    },
+    "awayTeam": {
+      "team_name": "Lok. Zagreb"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Rijeka-Istra",
+    "date": "2026-03-15",
+    "time": "16:45",
+    "league": "Croatia - 1. HNL",
+    "country": "Croatia",
+    "homeTeam": {
+      "team_name": "Rijeka"
+    },
+    "awayTeam": {
+      "team_name": "Istra"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-FCMidtjylland-Nordsjaelland",
+    "date": "2026-03-15",
+    "time": "13:00",
+    "league": "Denmark - Bundesliga",
+    "country": "Denmark",
+    "homeTeam": {
+      "team_name": "FC Midtjylland"
+    },
+    "awayTeam": {
+      "team_name": "Nordsjaelland"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-OdenseBK-FCKobenhavn",
+    "date": "2026-03-15",
+    "time": "13:00",
+    "league": "Denmark - Bundesliga",
+    "country": "Denmark",
+    "homeTeam": {
+      "team_name": "Odense BK"
+    },
+    "awayTeam": {
+      "team_name": "FC Kobenhavn"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-SonderjyskE-AGFAarhus",
+    "date": "2026-03-15",
+    "time": "15:00",
+    "league": "Denmark - Bundesliga",
+    "country": "Denmark",
+    "homeTeam": {
+      "team_name": "SonderjyskE"
+    },
+    "awayTeam": {
+      "team_name": "AGF Aarhus"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-BrondbyIF-Viborg",
+    "date": "2026-03-15",
+    "time": "17:00",
+    "league": "Denmark - Bundesliga",
+    "country": "Denmark",
+    "homeTeam": {
+      "team_name": "Brondby IF"
+    },
+    "awayTeam": {
+      "team_name": "Viborg"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-LausanneSport-BSCYoungBoys",
+    "date": "2026-03-15",
+    "time": "13:00",
+    "league": "Switzerland - Super League",
+    "country": "Switzerland",
+    "homeTeam": {
+      "team_name": "Lausanne Sport"
+    },
+    "awayTeam": {
+      "team_name": "BSC Young Boys"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-FCBasel-Servette",
+    "date": "2026-03-15",
+    "time": "15:30",
+    "league": "Switzerland - Super League",
+    "country": "Switzerland",
+    "homeTeam": {
+      "team_name": "FC Basel"
+    },
+    "awayTeam": {
+      "team_name": "Servette"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Luzern-Winterthur",
+    "date": "2026-03-15",
+    "time": "15:30",
+    "league": "Switzerland - Super League",
+    "country": "Switzerland",
+    "homeTeam": {
+      "team_name": "Luzern"
+    },
+    "awayTeam": {
+      "team_name": "Winterthur"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-SlovanLiberec-Teplice",
+    "date": "2026-03-15",
+    "time": "12:00",
+    "league": "Czech Republic - Ekstraklasa",
+    "country": "Czech Republic",
+    "homeTeam": {
+      "team_name": "Slovan Liberec"
+    },
+    "awayTeam": {
+      "team_name": "Teplice"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-SigmaOlomouc-Karvina",
+    "date": "2026-03-15",
+    "time": "14:30",
+    "league": "Czech Republic - Ekstraklasa",
+    "country": "Czech Republic",
+    "homeTeam": {
+      "team_name": "Sigma Olomouc"
+    },
+    "awayTeam": {
+      "team_name": "Karvina"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-ViktoriaPlzen-Bohemians",
+    "date": "2026-03-15",
+    "time": "14:30",
+    "league": "Czech Republic - Ekstraklasa",
+    "country": "Czech Republic",
+    "homeTeam": {
+      "team_name": "Viktoria Plzen"
+    },
+    "awayTeam": {
+      "team_name": "Bohemians"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-SpartaPrague-Slovacko",
+    "date": "2026-03-15",
+    "time": "17:30",
+    "league": "Czech Republic - Ekstraklasa",
+    "country": "Czech Republic",
+    "homeTeam": {
+      "team_name": "Sparta Prague"
+    },
+    "awayTeam": {
+      "team_name": "Slovacko"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Episentr-RukhLviv",
+    "date": "2026-03-15",
+    "time": "11:00",
+    "league": "Ukraine - Premier League",
+    "country": "Ukraine",
+    "homeTeam": {
+      "team_name": "Episentr"
+    },
+    "awayTeam": {
+      "team_name": "Rukh Lviv"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-KolosKovalivka-ZoryaLuhansk",
+    "date": "2026-03-15",
+    "time": "13:30",
+    "league": "Ukraine - Premier League",
+    "country": "Ukraine",
+    "homeTeam": {
+      "team_name": "Kolos Kovalivka"
+    },
+    "awayTeam": {
+      "team_name": "Zorya Luhansk"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Shakhtar-Metalist1925",
+    "date": "2026-03-15",
+    "time": "16:00",
+    "league": "Ukraine - Premier League",
+    "country": "Ukraine",
+    "homeTeam": {
+      "team_name": "Shakhtar"
+    },
+    "awayTeam": {
+      "team_name": "Metalist 1925"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-ChernoMore-Montana",
+    "date": "2026-03-15",
+    "time": "12:30",
+    "league": "Bulgaria - First League",
+    "country": "Bulgaria",
+    "homeTeam": {
+      "team_name": "Cherno More"
+    },
+    "awayTeam": {
+      "team_name": "Montana"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Beroe-LevskiSofia",
+    "date": "2026-03-15",
+    "time": "15:00",
+    "league": "Bulgaria - First League",
+    "country": "Bulgaria",
+    "homeTeam": {
+      "team_name": "Beroe"
+    },
+    "awayTeam": {
+      "team_name": "Levski Sofia"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-NoviPazar-Cukaricki",
+    "date": "2026-03-15",
+    "time": "12:00",
+    "league": "Serbia - Super Liga",
+    "country": "Serbia",
+    "homeTeam": {
+      "team_name": "Novi Pazar"
+    },
+    "awayTeam": {
+      "team_name": "Cukaricki"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Z.Pancevo-MladostLucani",
+    "date": "2026-03-15",
+    "time": "15:00",
+    "league": "Serbia - Super Liga",
+    "country": "Serbia",
+    "homeTeam": {
+      "team_name": "Z. Pancevo"
+    },
+    "awayTeam": {
+      "team_name": "Mladost Lucani"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-IMTN.Beograd-RedStar",
+    "date": "2026-03-15",
+    "time": "16:00",
+    "league": "Serbia - Super Liga",
+    "country": "Serbia",
+    "homeTeam": {
+      "team_name": "IMT N. Beograd"
+    },
+    "awayTeam": {
+      "team_name": "Red Star"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Radnicki1923-Vojvodina",
+    "date": "2026-03-15",
+    "time": "18:30",
+    "league": "Serbia - Super Liga",
+    "country": "Serbia",
+    "homeTeam": {
+      "team_name": "Radnicki 1923"
+    },
+    "awayTeam": {
+      "team_name": "Vojvodina"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Akron-AkhmatGrozny",
+    "date": "2026-03-15",
+    "time": "11:00",
+    "league": "Russia - Super Liga",
+    "country": "Russia",
+    "homeTeam": {
+      "team_name": "Akron"
+    },
+    "awayTeam": {
+      "team_name": "Akhmat Grozny"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-NizhnyNovgorod-KrylyaSovetov",
+    "date": "2026-03-15",
+    "time": "13:30",
+    "league": "Russia - Super Liga",
+    "country": "Russia",
+    "homeTeam": {
+      "team_name": "Nizhny Novgorod"
+    },
+    "awayTeam": {
+      "team_name": "Krylya Sovetov"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-RubinKazan-LokomotivM.",
+    "date": "2026-03-15",
+    "time": "16:00",
+    "league": "Russia - Super Liga",
+    "country": "Russia",
+    "homeTeam": {
+      "team_name": "Rubin Kazan"
+    },
+    "awayTeam": {
+      "team_name": "Lokomotiv M."
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Koper-NKCelje",
+    "date": "2026-03-15",
+    "time": "16:30",
+    "league": "Slovenia - PrvaLiga",
+    "country": "Slovenia",
+    "homeTeam": {
+      "team_name": "Koper"
+    },
+    "awayTeam": {
+      "team_name": "NK Celje"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Primorje-Aluminij",
+    "date": "2026-03-15",
+    "time": "19:15",
+    "league": "Slovenia - PrvaLiga",
+    "country": "Slovenia",
+    "homeTeam": {
+      "team_name": "Primorje"
+    },
+    "awayTeam": {
+      "team_name": "Aluminij"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Trencin-Skalica",
+    "date": "2026-03-15",
+    "time": "14:30",
+    "league": "Slovakia - Super Liga",
+    "country": "Slovakia",
+    "homeTeam": {
+      "team_name": "Trencin"
+    },
+    "awayTeam": {
+      "team_name": "Skalica"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-S.Bratislava-Zilina",
+    "date": "2026-03-15",
+    "time": "17:00",
+    "league": "Slovakia - Super Liga",
+    "country": "Slovakia",
+    "homeTeam": {
+      "team_name": "S. Bratislava"
+    },
+    "awayTeam": {
+      "team_name": "Zilina"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Entella-Avellino",
+    "date": "2026-03-15",
+    "time": "14:00",
+    "league": "Italy - Serie B",
+    "country": "Italy",
+    "homeTeam": {
+      "team_name": "Entella"
+    },
+    "awayTeam": {
+      "team_name": "Avellino"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Sudtirol-Pescara",
+    "date": "2026-03-15",
+    "time": "16:15",
+    "league": "Italy - Serie B",
+    "country": "Italy",
+    "homeTeam": {
+      "team_name": "Sudtirol"
+    },
+    "awayTeam": {
+      "team_name": "Pescara"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Lokeren-Temse-JongGent",
+    "date": "2026-03-15",
+    "time": "15:00",
+    "league": "Belgium - Challenger Pro League",
+    "country": "Belgium",
+    "homeTeam": {
+      "team_name": "Lokeren-Temse"
+    },
+    "awayTeam": {
+      "team_name": "Jong Gent"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-LommelSK-FrancsBorains",
+    "date": "2026-03-15",
+    "time": "15:00",
+    "league": "Belgium - Challenger Pro League",
+    "country": "Belgium",
+    "homeTeam": {
+      "team_name": "Lommel SK"
+    },
+    "awayTeam": {
+      "team_name": "Francs Borains"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-DynamoDresden-Preuss.Munster",
+    "date": "2026-03-15",
+    "time": "12:30",
+    "league": "Germany - 2. Bundesliga",
+    "country": "Germany",
+    "homeTeam": {
+      "team_name": "Dynamo Dresden"
+    },
+    "awayTeam": {
+      "team_name": "Preuss. Munster"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Kaiserslautern-KarlsruherSC",
+    "date": "2026-03-15",
+    "time": "12:30",
+    "league": "Germany - 2. Bundesliga",
+    "country": "Germany",
+    "homeTeam": {
+      "team_name": "Kaiserslautern"
+    },
+    "awayTeam": {
+      "team_name": "Karlsruher SC"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Schalke04-Hannover96",
+    "date": "2026-03-15",
+    "time": "12:30",
+    "league": "Germany - 2. Bundesliga",
+    "country": "Germany",
+    "homeTeam": {
+      "team_name": "Schalke 04"
+    },
+    "awayTeam": {
+      "team_name": "Hannover 96"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Cordoba-RealSociedadB",
+    "date": "2026-03-15",
+    "time": "13:00",
+    "league": "Spain - Segunda Division",
+    "country": "Spain",
+    "homeTeam": {
+      "team_name": "Cordoba"
+    },
+    "awayTeam": {
+      "team_name": "Real Sociedad B"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Granada-FCAndorra",
+    "date": "2026-03-15",
+    "time": "15:15",
+    "league": "Spain - Segunda Division",
+    "country": "Spain",
+    "homeTeam": {
+      "team_name": "Granada"
+    },
+    "awayTeam": {
+      "team_name": "FC Andorra"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Eibar-Burgos",
+    "date": "2026-03-15",
+    "time": "17:30",
+    "league": "Spain - Segunda Division",
+    "country": "Spain",
+    "homeTeam": {
+      "team_name": "Eibar"
+    },
+    "awayTeam": {
+      "team_name": "Burgos"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Malaga-Huesca",
+    "date": "2026-03-15",
+    "time": "17:30",
+    "league": "Spain - Segunda Division",
+    "country": "Spain",
+    "homeTeam": {
+      "team_name": "Malaga"
+    },
+    "awayTeam": {
+      "team_name": "Huesca"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-SportingGijon-Castellon",
+    "date": "2026-03-15",
+    "time": "20:00",
+    "league": "Spain - Segunda Division",
+    "country": "Spain",
+    "homeTeam": {
+      "team_name": "Sporting Gijon"
+    },
+    "awayTeam": {
+      "team_name": "Castellon"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-SantaFe-A.Petrolera",
+    "date": "2026-03-15",
+    "time": "01:30",
+    "league": "Colombia - Primera A",
+    "country": "Colombia",
+    "homeTeam": {
+      "team_name": "Santa Fe"
+    },
+    "awayTeam": {
+      "team_name": "A. Petrolera"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-D.Pereira-R.Aguilas",
+    "date": "2026-03-15",
+    "time": "21:00",
+    "league": "Colombia - Primera A",
+    "country": "Colombia",
+    "homeTeam": {
+      "team_name": "D. Pereira"
+    },
+    "awayTeam": {
+      "team_name": "R. Aguilas"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-AmericadeCali-DeportesTolima",
+    "date": "2026-03-15",
+    "time": "21:10",
+    "league": "Colombia - Primera A",
+    "country": "Colombia",
+    "homeTeam": {
+      "team_name": "America de Cali"
+    },
+    "awayTeam": {
+      "team_name": "Deportes Tolima"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-JaguaresdeC.-I.Medelin",
+    "date": "2026-03-15",
+    "time": "23:20",
+    "league": "Colombia - Primera A",
+    "country": "Colombia",
+    "homeTeam": {
+      "team_name": "Jaguares de C."
+    },
+    "awayTeam": {
+      "team_name": "I. Medelin"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-RosarioCentral-Banfield",
+    "date": "2026-03-15",
+    "time": "00:00",
+    "league": "Argentina - Primera Division",
+    "country": "Argentina",
+    "homeTeam": {
+      "team_name": "Rosario Central"
+    },
+    "awayTeam": {
+      "team_name": "Banfield"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Gimnasia-I.Rivadavia",
+    "date": "2026-03-15",
+    "time": "18:15",
+    "league": "Argentina - Primera Division",
+    "country": "Argentina",
+    "homeTeam": {
+      "team_name": "Gimnasia"
+    },
+    "awayTeam": {
+      "team_name": "I. Rivadavia"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Belgrano-T.deCordoba",
+    "date": "2026-03-15",
+    "time": "20:30",
+    "league": "Argentina - Primera Division",
+    "country": "Argentina",
+    "homeTeam": {
+      "team_name": "Belgrano"
+    },
+    "awayTeam": {
+      "team_name": "T. de Cordoba"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-RiverPlate-Sarmiento",
+    "date": "2026-03-15",
+    "time": "22:45",
+    "league": "Argentina - Primera Division",
+    "country": "Argentina",
+    "homeTeam": {
+      "team_name": "River Plate"
+    },
+    "awayTeam": {
+      "team_name": "Sarmiento"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Fluminense-AthleticoPR",
+    "date": "2026-03-15",
+    "time": "19:00",
+    "league": "Brazil - Serie A",
+    "country": "Brazil",
+    "homeTeam": {
+      "team_name": "Fluminense"
+    },
+    "awayTeam": {
+      "team_name": "Athletico PR"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Internacional-Bahia",
+    "date": "2026-03-15",
+    "time": "19:00",
+    "league": "Brazil - Serie A",
+    "country": "Brazil",
+    "homeTeam": {
+      "team_name": "Internacional"
+    },
+    "awayTeam": {
+      "team_name": "Bahia"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Santos-Corinthians",
+    "date": "2026-03-15",
+    "time": "19:00",
+    "league": "Brazil - Serie A",
+    "country": "Brazil",
+    "homeTeam": {
+      "team_name": "Santos"
+    },
+    "awayTeam": {
+      "team_name": "Corinthians"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Coritiba-Remo",
+    "date": "2026-03-15",
+    "time": "21:30",
+    "league": "Brazil - Serie A",
+    "country": "Brazil",
+    "homeTeam": {
+      "team_name": "Coritiba"
+    },
+    "awayTeam": {
+      "team_name": "Remo"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Palmeiras-Mirassol",
+    "date": "2026-03-15",
+    "time": "21:30",
+    "league": "Brazil - Serie A",
+    "country": "Brazil",
+    "homeTeam": {
+      "team_name": "Palmeiras"
+    },
+    "awayTeam": {
+      "team_name": "Mirassol"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Bragantino-SaoPaulo",
+    "date": "2026-03-15",
+    "time": "23:30",
+    "league": "Brazil - Serie A",
+    "country": "Brazil",
+    "homeTeam": {
+      "team_name": "Bragantino"
+    },
+    "awayTeam": {
+      "team_name": "Sao Paulo"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Cruzeiro-VascodaGama",
+    "date": "2026-03-15",
+    "time": "23:30",
+    "league": "Brazil - Serie A",
+    "country": "Brazil",
+    "homeTeam": {
+      "team_name": "Cruzeiro"
+    },
+    "awayTeam": {
+      "team_name": "Vasco da Gama"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-U.Concepcion-Palestino",
+    "date": "2026-03-15",
+    "time": "15:00",
+    "league": "Chile - Primera Division",
+    "country": "Chile",
+    "homeTeam": {
+      "team_name": "U. Concepcion"
+    },
+    "awayTeam": {
+      "team_name": "Palestino"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Cobresal-D.Limache",
+    "date": "2026-03-15",
+    "time": "21:00",
+    "league": "Chile - Primera Division",
+    "country": "Chile",
+    "homeTeam": {
+      "team_name": "Cobresal"
+    },
+    "awayTeam": {
+      "team_name": "D. Limache"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Nublense-LaSerena",
+    "date": "2026-03-15",
+    "time": "23:30",
+    "league": "Chile - Primera Division",
+    "country": "Chile",
+    "homeTeam": {
+      "team_name": "Nublense"
+    },
+    "awayTeam": {
+      "team_name": "La Serena"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Nacional-RubioNu",
+    "date": "2026-03-15",
+    "time": "21:30",
+    "league": "Paraguay - Primera Division",
+    "country": "Paraguay",
+    "homeTeam": {
+      "team_name": "Nacional"
+    },
+    "awayTeam": {
+      "team_name": "Rubio Nu"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-S.Ameliano-Guarani",
+    "date": "2026-03-15",
+    "time": "23:30",
+    "league": "Paraguay - Primera Division",
+    "country": "Paraguay",
+    "homeTeam": {
+      "team_name": "S. Ameliano"
+    },
+    "awayTeam": {
+      "team_name": "Guarani"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-CentralEspanol-CerroLargo",
+    "date": "2026-03-15",
+    "time": "13:00",
+    "league": "Uruguay - Primera Division",
+    "country": "Uruguay",
+    "homeTeam": {
+      "team_name": "Central Espanol"
+    },
+    "awayTeam": {
+      "team_name": "Cerro Largo"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-D.Maldonado-DefensorS.",
+    "date": "2026-03-15",
+    "time": "20:00",
+    "league": "Uruguay - Primera Division",
+    "country": "Uruguay",
+    "homeTeam": {
+      "team_name": "D. Maldonado"
+    },
+    "awayTeam": {
+      "team_name": "Defensor S."
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-D.Cuenca-LeonesNorte",
+    "date": "2026-03-15",
+    "time": "00:00",
+    "league": "Ecuador - Liga Pro",
+    "country": "Ecuador",
+    "homeTeam": {
+      "team_name": "D. Cuenca"
+    },
+    "awayTeam": {
+      "team_name": "Leones Norte"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Delfin-Manta",
+    "date": "2026-03-15",
+    "time": "00:00",
+    "league": "Ecuador - Liga Pro",
+    "country": "Ecuador",
+    "homeTeam": {
+      "team_name": "Delfin"
+    },
+    "awayTeam": {
+      "team_name": "Manta"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Emelec-Orense",
+    "date": "2026-03-15",
+    "time": "00:00",
+    "league": "Ecuador - Liga Pro",
+    "country": "Ecuador",
+    "homeTeam": {
+      "team_name": "Emelec"
+    },
+    "awayTeam": {
+      "team_name": "Orense"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-GuayaquilCity-BarcelonaSC",
+    "date": "2026-03-15",
+    "time": "00:00",
+    "league": "Ecuador - Liga Pro",
+    "country": "Ecuador",
+    "homeTeam": {
+      "team_name": "Guayaquil City"
+    },
+    "awayTeam": {
+      "team_name": "Barcelona SC"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-I.delValle-Aucas",
+    "date": "2026-03-15",
+    "time": "00:00",
+    "league": "Ecuador - Liga Pro",
+    "country": "Ecuador",
+    "homeTeam": {
+      "team_name": "I. del Valle"
+    },
+    "awayTeam": {
+      "team_name": "Aucas"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-LDUQuito-U.Catolica",
+    "date": "2026-03-15",
+    "time": "00:00",
+    "league": "Ecuador - Liga Pro",
+    "country": "Ecuador",
+    "homeTeam": {
+      "team_name": "LDU Quito"
+    },
+    "awayTeam": {
+      "team_name": "U. Catolica"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-MushucRuna-Macara",
+    "date": "2026-03-15",
+    "time": "00:00",
+    "league": "Ecuador - Liga Pro",
+    "country": "Ecuador",
+    "homeTeam": {
+      "team_name": "Mushuc Runa"
+    },
+    "awayTeam": {
+      "team_name": "Macara"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Carabobo-RayoZuliano",
+    "date": "2026-03-15",
+    "time": "21:00",
+    "league": "Venezuela - Primera Division",
+    "country": "Venezuela",
+    "homeTeam": {
+      "team_name": "Carabobo"
+    },
+    "awayTeam": {
+      "team_name": "Rayo Zuliano"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-D.Tachira-Zamora",
+    "date": "2026-03-15",
+    "time": "23:00",
+    "league": "Venezuela - Primera Division",
+    "country": "Venezuela",
+    "homeTeam": {
+      "team_name": "D. Tachira"
+    },
+    "awayTeam": {
+      "team_name": "Zamora"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Universitario-Cajamarca",
+    "date": "2026-03-15",
+    "time": "01:30",
+    "league": "Peru - Primera Division",
+    "country": "Peru",
+    "homeTeam": {
+      "team_name": "Universitario"
+    },
+    "awayTeam": {
+      "team_name": "Cajamarca"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-S.Cristal-SportBoys",
+    "date": "2026-03-15",
+    "time": "16:00",
+    "league": "Peru - Primera Division",
+    "country": "Peru",
+    "homeTeam": {
+      "team_name": "S. Cristal"
+    },
+    "awayTeam": {
+      "team_name": "Sport Boys"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-FBCMelgar-AtleticoGrau",
+    "date": "2026-03-15",
+    "time": "18:15",
+    "league": "Peru - Primera Division",
+    "country": "Peru",
+    "homeTeam": {
+      "team_name": "FBC Melgar"
+    },
+    "awayTeam": {
+      "team_name": "Atletico Grau"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-AlianzaA.-UCVMoquegua",
+    "date": "2026-03-15",
+    "time": "20:30",
+    "league": "Peru - Primera Division",
+    "country": "Peru",
+    "homeTeam": {
+      "team_name": "Alianza A."
+    },
+    "awayTeam": {
+      "team_name": "UCV Moquegua"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Cusco-Cienciano",
+    "date": "2026-03-15",
+    "time": "23:00",
+    "league": "Peru - Primera Division",
+    "country": "Peru",
+    "homeTeam": {
+      "team_name": "Cusco"
+    },
+    "awayTeam": {
+      "team_name": "Cienciano"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Kristiansund-Brann",
+    "date": "2026-03-15",
+    "time": "13:30",
+    "league": "Norway - Eliteserien",
+    "country": "Norway",
+    "homeTeam": {
+      "team_name": "Kristiansund"
+    },
+    "awayTeam": {
+      "team_name": "Brann"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Aalesund-Lillestrom",
+    "date": "2026-03-15",
+    "time": "16:00",
+    "league": "Norway - Eliteserien",
+    "country": "Norway",
+    "homeTeam": {
+      "team_name": "Aalesund"
+    },
+    "awayTeam": {
+      "team_name": "Lillestrom"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-KFUMOslo-Start",
+    "date": "2026-03-15",
+    "time": "16:00",
+    "league": "Norway - Eliteserien",
+    "country": "Norway",
+    "homeTeam": {
+      "team_name": "KFUM Oslo"
+    },
+    "awayTeam": {
+      "team_name": "Start"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Valerenga-Sandefjord",
+    "date": "2026-03-15",
+    "time": "16:00",
+    "league": "Norway - Eliteserien",
+    "country": "Norway",
+    "homeTeam": {
+      "team_name": "Valerenga"
+    },
+    "awayTeam": {
+      "team_name": "Sandefjord"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Tromso-Fredrikstad",
+    "date": "2026-03-15",
+    "time": "18:15",
+    "league": "Norway - Eliteserien",
+    "country": "Norway",
+    "homeTeam": {
+      "team_name": "Tromso"
+    },
+    "awayTeam": {
+      "team_name": "Fredrikstad"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-ChicagoFire-DCUnited",
+    "date": "2026-03-15",
+    "time": "00:30",
+    "league": "USA - MLS",
+    "country": "USA",
+    "homeTeam": {
+      "team_name": "Chicago Fire"
+    },
+    "awayTeam": {
+      "team_name": "DC United"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Dallas-SanDiego",
+    "date": "2026-03-15",
+    "time": "00:30",
+    "league": "USA - MLS",
+    "country": "USA",
+    "homeTeam": {
+      "team_name": "Dallas"
+    },
+    "awayTeam": {
+      "team_name": "San Diego"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-HoustonDynamo-Portland",
+    "date": "2026-03-15",
+    "time": "00:30",
+    "league": "USA - MLS",
+    "country": "USA",
+    "homeTeam": {
+      "team_name": "Houston Dynamo"
+    },
+    "awayTeam": {
+      "team_name": "Portland"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-LAGalaxy-SportingKC",
+    "date": "2026-03-15",
+    "time": "01:30",
+    "league": "USA - MLS",
+    "country": "USA",
+    "homeTeam": {
+      "team_name": "LA Galaxy"
+    },
+    "awayTeam": {
+      "team_name": "Sporting KC"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-RealSaltLake-Austin",
+    "date": "2026-03-15",
+    "time": "01:30",
+    "league": "USA - MLS",
+    "country": "USA",
+    "homeTeam": {
+      "team_name": "Real Salt Lake"
+    },
+    "awayTeam": {
+      "team_name": "Austin"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-LosAngelesFC-St.LouisCity",
+    "date": "2026-03-15",
+    "time": "02:30",
+    "league": "USA - MLS",
+    "country": "USA",
+    "homeTeam": {
+      "team_name": "Los Angeles FC"
+    },
+    "awayTeam": {
+      "team_name": "St. Louis City"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-NewEngland-Cincinnati",
+    "date": "2026-03-15",
+    "time": "18:30",
+    "league": "USA - MLS",
+    "country": "USA",
+    "homeTeam": {
+      "team_name": "New England"
+    },
+    "awayTeam": {
+      "team_name": "Cincinnati"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Vancouver-MinnesotaUtd",
+    "date": "2026-03-15",
+    "time": "20:30",
+    "league": "USA - MLS",
+    "country": "USA",
+    "homeTeam": {
+      "team_name": "Vancouver"
+    },
+    "awayTeam": {
+      "team_name": "Minnesota Utd"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-SJEarthquakes-Seattle",
+    "date": "2026-03-15",
+    "time": "23:00",
+    "league": "USA - MLS",
+    "country": "USA",
+    "homeTeam": {
+      "team_name": "SJ Earthquakes"
+    },
+    "awayTeam": {
+      "team_name": "Seattle"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-MelbourneV.-MacarthurFC",
+    "date": "2026-03-15",
+    "time": "08:00",
+    "league": "Australia - A-League",
+    "country": "Australia",
+    "homeTeam": {
+      "team_name": "Melbourne V."
+    },
+    "awayTeam": {
+      "team_name": "Macarthur FC"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-BucheonFC-Ulsan",
+    "date": "2026-03-15",
+    "time": "05:00",
+    "league": "South Korea - K-League 1",
+    "country": "South Korea",
+    "homeTeam": {
+      "team_name": "Bucheon FC"
+    },
+    "awayTeam": {
+      "team_name": "Ulsan"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-JejuUtd-Seoul",
+    "date": "2026-03-15",
+    "time": "05:00",
+    "league": "South Korea - K-League 1",
+    "country": "South Korea",
+    "homeTeam": {
+      "team_name": "Jeju Utd"
+    },
+    "awayTeam": {
+      "team_name": "Seoul"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Gangwon-Anyang",
+    "date": "2026-03-15",
+    "time": "07:30",
+    "league": "South Korea - K-League 1",
+    "country": "South Korea",
+    "homeTeam": {
+      "team_name": "Gangwon"
+    },
+    "awayTeam": {
+      "team_name": "Anyang"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-PohangSteelers-IncheonUtd",
+    "date": "2026-03-15",
+    "time": "07:30",
+    "league": "South Korea - K-League 1",
+    "country": "South Korea",
+    "homeTeam": {
+      "team_name": "Pohang Steelers"
+    },
+    "awayTeam": {
+      "team_name": "Incheon Utd"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-HenanSL-YunnanYukun",
+    "date": "2026-03-15",
+    "time": "07:30",
+    "league": "China - Super League",
+    "country": "China",
+    "homeTeam": {
+      "team_name": "Henan SL"
+    },
+    "awayTeam": {
+      "team_name": "Yunnan Yukun"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-ShanghaiPort-QingdaoWestC.",
+    "date": "2026-03-15",
+    "time": "11:00",
+    "league": "China - Super League",
+    "country": "China",
+    "homeTeam": {
+      "team_name": "Shanghai Port"
+    },
+    "awayTeam": {
+      "team_name": "Qingdao West C."
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Chengdu-QingdaoHainiu",
+    "date": "2026-03-15",
+    "time": "11:35",
+    "league": "China - Super League",
+    "country": "China",
+    "homeTeam": {
+      "team_name": "Chengdu"
+    },
+    "awayTeam": {
+      "team_name": "Qingdao Hainiu"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-AvispaFukuoka-FCTokyo",
+    "date": "2026-03-15",
+    "time": "1:0",
+    "league": "Japan - J-League",
+    "country": "Japan",
+    "homeTeam": {
+      "team_name": "Avispa Fukuoka"
+    },
+    "awayTeam": {
+      "team_name": "FC Tokyo"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-MachidaZelvia-AlbirexNiigata",
+    "date": "2026-03-15",
+    "time": "1:0",
+    "league": "Japan - J-League",
+    "country": "Japan",
+    "homeTeam": {
+      "team_name": "Machida Zelvia"
+    },
+    "awayTeam": {
+      "team_name": "Albirex Niigata"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-TokyoVerdy-NagoyaG.",
+    "date": "2026-03-15",
+    "time": "2:1",
+    "league": "Japan - J-League",
+    "country": "Japan",
+    "homeTeam": {
+      "team_name": "Tokyo Verdy"
+    },
+    "awayTeam": {
+      "team_name": "Nagoya G."
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-YokohamaFC-CerezoOsaka",
+    "date": "2026-03-15",
+    "time": "2:0",
+    "league": "Japan - J-League",
+    "country": "Japan",
+    "homeTeam": {
+      "team_name": "Yokohama FC"
+    },
+    "awayTeam": {
+      "team_name": "Cerezo Osaka"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-NorthEastUtd-Jamshedpur",
+    "date": "2026-03-15",
+    "time": "11:30",
+    "league": "India - Super League",
+    "country": "India",
+    "homeTeam": {
+      "team_name": "NorthEast Utd"
+    },
+    "awayTeam": {
+      "team_name": "Jamshedpur"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-InterKashi-MumbaiCity",
+    "date": "2026-03-15",
+    "time": "14:00",
+    "league": "India - Super League",
+    "country": "India",
+    "homeTeam": {
+      "team_name": "Inter Kashi"
+    },
+    "awayTeam": {
+      "team_name": "Mumbai City"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-BangkokUtd-PortFC",
+    "date": "2026-03-15",
+    "time": "11:00",
+    "league": "Thailand - Thai League 1",
+    "country": "Thailand",
+    "homeTeam": {
+      "team_name": "Bangkok Utd"
+    },
+    "awayTeam": {
+      "team_name": "Port FC"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Kanchanaburi-Sukhothai",
+    "date": "2026-03-15",
+    "time": "11:30",
+    "league": "Thailand - Thai League 1",
+    "country": "Thailand",
+    "homeTeam": {
+      "team_name": "Kanchanaburi"
+    },
+    "awayTeam": {
+      "team_name": "Sukhothai"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Ratchaburi-AyutthayaUtd",
+    "date": "2026-03-15",
+    "time": "12:00",
+    "league": "Thailand - Thai League 1",
+    "country": "Thailand",
+    "homeTeam": {
+      "team_name": "Ratchaburi"
+    },
+    "awayTeam": {
+      "team_name": "Ayutthaya Utd"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Borneo-Persib",
+    "date": "2026-03-15",
+    "time": "13:30",
+    "league": "Indonesia - Liga 1",
+    "country": "Indonesia",
+    "homeTeam": {
+      "team_name": "Borneo"
+    },
+    "awayTeam": {
+      "team_name": "Persib"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Persija-DewaUtd",
+    "date": "2026-03-15",
+    "time": "13:30",
+    "league": "Indonesia - Liga 1",
+    "country": "Indonesia",
+    "homeTeam": {
+      "team_name": "Persija"
+    },
+    "awayTeam": {
+      "team_name": "Dewa Utd"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-KaizerChiefs-DurbanCity",
+    "date": "2026-03-15",
+    "time": "13:30",
+    "league": "South Africa - Premier Division",
+    "country": "South Africa",
+    "homeTeam": {
+      "team_name": "Kaizer Chiefs"
+    },
+    "awayTeam": {
+      "team_name": "Durban City"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-HoChiMinh-PVF-CAND",
+    "date": "2026-03-15",
+    "time": "12:15",
+    "league": "Vietnam - V.League 1",
+    "country": "Vietnam",
+    "homeTeam": {
+      "team_name": "Ho Chi Minh"
+    },
+    "awayTeam": {
+      "team_name": "PVF-CAND"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Viettel-HaiPhong",
+    "date": "2026-03-15",
+    "time": "12:15",
+    "league": "Vietnam - V.League 1",
+    "country": "Vietnam",
+    "homeTeam": {
+      "team_name": "Viettel"
+    },
+    "awayTeam": {
+      "team_name": "Hai Phong"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-DPMMFC-JohorDarul",
+    "date": "2026-03-15",
+    "time": "13:30",
+    "league": "Malaysia - Super League",
+    "country": "Malaysia",
+    "homeTeam": {
+      "team_name": "DPMM FC"
+    },
+    "awayTeam": {
+      "team_name": "Johor Darul"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-KualaLumpur-Selangor",
+    "date": "2026-03-15",
+    "time": "14:00",
+    "league": "Malaysia - Super League",
+    "country": "Malaysia",
+    "homeTeam": {
+      "team_name": "Kuala Lumpur"
+    },
+    "awayTeam": {
+      "team_name": "Selangor"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Melaka-KelantanDN",
+    "date": "2026-03-15",
+    "time": "14:00",
+    "league": "Malaysia - Super League",
+    "country": "Malaysia",
+    "homeTeam": {
+      "team_name": "Melaka"
+    },
+    "awayTeam": {
+      "team_name": "Kelantan DN"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Geylang-A.Niigata(S)",
+    "date": "2026-03-15",
+    "time": "12:30",
+    "league": "Singapore - Premier League",
+    "country": "Singapore",
+    "homeTeam": {
+      "team_name": "Geylang"
+    },
+    "awayTeam": {
+      "team_name": "A. Niigata (S)"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-15-Khalsa-LionCity",
+    "date": "2026-03-15",
+    "time": "12:30",
+    "league": "Singapore - Premier League",
+    "country": "Singapore",
+    "homeTeam": {
+      "team_name": "Khalsa"
+    },
+    "awayTeam": {
+      "team_name": "Lion City"
+    },
+    "status": "NS"
+  }
+]

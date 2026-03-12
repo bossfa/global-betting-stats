@@ -2,7 +2,7 @@
   {
     "fixture_id": "2026-03-10-Galatasaray-Liverpool",
     "date": "2026-03-10",
-    "time": "17:45",
+    "time": "1:0",
     "league": "Europe - Champions League",
     "country": "Europe",
     "homeTeam": {
@@ -11,12 +11,12 @@
     "awayTeam": {
       "team_name": "Liverpool"
     },
-    "status": "NS"
+    "status": "FT"
   },
   {
     "fixture_id": "2026-03-10-Atalanta-FCBayern",
     "date": "2026-03-10",
-    "time": "20:00",
+    "time": "1:6",
     "league": "Europe - Champions League",
     "country": "Europe",
     "homeTeam": {
@@ -25,12 +25,12 @@
     "awayTeam": {
       "team_name": "FC Bayern"
     },
-    "status": "NS"
+    "status": "FT"
   },
   {
     "fixture_id": "2026-03-10-Atletico-Tottenham",
     "date": "2026-03-10",
-    "time": "20:00",
+    "time": "5:2",
     "league": "Europe - Champions League",
     "country": "Europe",
     "homeTeam": {
@@ -39,12 +39,12 @@
     "awayTeam": {
       "team_name": "Tottenham"
     },
-    "status": "NS"
+    "status": "FT"
   },
   {
     "fixture_id": "2026-03-10-Newcastle-FCBarcelona",
     "date": "2026-03-10",
-    "time": "20:00",
+    "time": "1:1",
     "league": "Europe - Champions League",
     "country": "Europe",
     "homeTeam": {
@@ -53,12 +53,12 @@
     "awayTeam": {
       "team_name": "FC Barcelona"
     },
-    "status": "NS"
+    "status": "FT"
   },
   {
     "fixture_id": "2026-03-10-Barrow-BristolRovers",
     "date": "2026-03-10",
-    "time": "pp.",
+    "time": "0:2",
     "league": "England - League Two",
     "country": "England",
     "homeTeam": {
@@ -67,12 +67,12 @@
     "awayTeam": {
       "team_name": "Bristol Rovers"
     },
-    "status": "FT"
+    "status": "NS"
   },
   {
     "fixture_id": "2026-03-10-Fleetwood-Cheltenham",
     "date": "2026-03-10",
-    "time": "19:45",
+    "time": "2:2",
     "league": "England - League Two",
     "country": "England",
     "homeTeam": {
@@ -86,7 +86,7 @@
   {
     "fixture_id": "2026-03-10-Gillingham-MiltonKeynes",
     "date": "2026-03-10",
-    "time": "19:45",
+    "time": "1:5",
     "league": "England - League Two",
     "country": "England",
     "homeTeam": {
@@ -100,7 +100,7 @@
   {
     "fixture_id": "2026-03-10-SalfordCity-Walsall",
     "date": "2026-03-10",
-    "time": "19:45",
+    "time": "1:0",
     "league": "England - League Two",
     "country": "England",
     "homeTeam": {
@@ -112,261 +112,9 @@
     "status": "NS"
   },
   {
-    "fixture_id": "2026-03-10-AFCFylde-TelfordUtd",
-    "date": "2026-03-10",
-    "time": "19:45",
-    "league": "England - National League North",
-    "country": "England",
-    "homeTeam": {
-      "team_name": "AFC Fylde"
-    },
-    "awayTeam": {
-      "team_name": "Telford Utd"
-    },
-    "status": "NS"
-  },
-  {
-    "fixture_id": "2026-03-10-AlfretonTown-Radcliffe",
-    "date": "2026-03-10",
-    "time": "19:45",
-    "league": "England - National League North",
-    "country": "England",
-    "homeTeam": {
-      "team_name": "Alfreton Town"
-    },
-    "awayTeam": {
-      "team_name": "Radcliffe"
-    },
-    "status": "NS"
-  },
-  {
-    "fixture_id": "2026-03-10-BedfordTown-WorksopTown",
-    "date": "2026-03-10",
-    "time": "19:45",
-    "league": "England - National League North",
-    "country": "England",
-    "homeTeam": {
-      "team_name": "Bedford Town"
-    },
-    "awayTeam": {
-      "team_name": "Worksop Town"
-    },
-    "status": "NS"
-  },
-  {
-    "fixture_id": "2026-03-10-Chorley-SouthShields",
-    "date": "2026-03-10",
-    "time": "19:45",
-    "league": "England - National League North",
-    "country": "England",
-    "homeTeam": {
-      "team_name": "Chorley"
-    },
-    "awayTeam": {
-      "team_name": "South Shields"
-    },
-    "status": "NS"
-  },
-  {
-    "fixture_id": "2026-03-10-Curzon-OxfordCity",
-    "date": "2026-03-10",
-    "time": "19:45",
-    "league": "England - National League North",
-    "country": "England",
-    "homeTeam": {
-      "team_name": "Curzon"
-    },
-    "awayTeam": {
-      "team_name": "Oxford City"
-    },
-    "status": "NS"
-  },
-  {
-    "fixture_id": "2026-03-10-Darlington-Buxton",
-    "date": "2026-03-10",
-    "time": "19:45",
-    "league": "England - National League North",
-    "country": "England",
-    "homeTeam": {
-      "team_name": "Darlington"
-    },
-    "awayTeam": {
-      "team_name": "Buxton"
-    },
-    "status": "NS"
-  },
-  {
-    "fixture_id": "2026-03-10-HerefordUtd-Leamington",
-    "date": "2026-03-10",
-    "time": "19:45",
-    "league": "England - National League North",
-    "country": "England",
-    "homeTeam": {
-      "team_name": "Hereford Utd"
-    },
-    "awayTeam": {
-      "team_name": "Leamington"
-    },
-    "status": "NS"
-  },
-  {
-    "fixture_id": "2026-03-10-Kidderminster-PeterboroughS.",
-    "date": "2026-03-10",
-    "time": "19:45",
-    "league": "England - National League North",
-    "country": "England",
-    "homeTeam": {
-      "team_name": "Kidderminster"
-    },
-    "awayTeam": {
-      "team_name": "Peterborough S."
-    },
-    "status": "NS"
-  },
-  {
-    "fixture_id": "2026-03-10-Marine-Macclesfield",
-    "date": "2026-03-10",
-    "time": "19:45",
-    "league": "England - National League North",
-    "country": "England",
-    "homeTeam": {
-      "team_name": "Marine"
-    },
-    "awayTeam": {
-      "team_name": "Macclesfield"
-    },
-    "status": "NS"
-  },
-  {
-    "fixture_id": "2026-03-10-MerthyrTown-Chester",
-    "date": "2026-03-10",
-    "time": "19:45",
-    "league": "England - National League North",
-    "country": "England",
-    "homeTeam": {
-      "team_name": "Merthyr Town"
-    },
-    "awayTeam": {
-      "team_name": "Chester"
-    },
-    "status": "NS"
-  },
-  {
-    "fixture_id": "2026-03-10-Scarborough-KingsLynn",
-    "date": "2026-03-10",
-    "time": "19:45",
-    "league": "England - National League North",
-    "country": "England",
-    "homeTeam": {
-      "team_name": "Scarborough"
-    },
-    "awayTeam": {
-      "team_name": "Kings Lynn"
-    },
-    "status": "NS"
-  },
-  {
-    "fixture_id": "2026-03-10-Southport-Spennymoor",
-    "date": "2026-03-10",
-    "time": "19:45",
-    "league": "England - National League North",
-    "country": "England",
-    "homeTeam": {
-      "team_name": "Southport"
-    },
-    "awayTeam": {
-      "team_name": "Spennymoor"
-    },
-    "status": "NS"
-  },
-  {
-    "fixture_id": "2026-03-10-AldershotTown-CarlisleUtd",
-    "date": "2026-03-10",
-    "time": "19:45",
-    "league": "England - National League",
-    "country": "England",
-    "homeTeam": {
-      "team_name": "Aldershot Town"
-    },
-    "awayTeam": {
-      "team_name": "Carlisle Utd"
-    },
-    "status": "NS"
-  },
-  {
-    "fixture_id": "2026-03-10-Eastleigh-BrackleyTown",
-    "date": "2026-03-10",
-    "time": "19:45",
-    "league": "England - National League",
-    "country": "England",
-    "homeTeam": {
-      "team_name": "Eastleigh"
-    },
-    "awayTeam": {
-      "team_name": "Brackley Town"
-    },
-    "status": "NS"
-  },
-  {
-    "fixture_id": "2026-03-10-Scunthorpe-SuttonUtd",
-    "date": "2026-03-10",
-    "time": "19:45",
-    "league": "England - National League",
-    "country": "England",
-    "homeTeam": {
-      "team_name": "Scunthorpe"
-    },
-    "awayTeam": {
-      "team_name": "Sutton Utd"
-    },
-    "status": "NS"
-  },
-  {
-    "fixture_id": "2026-03-10-SouthendUtd-GatesheadFC",
-    "date": "2026-03-10",
-    "time": "19:45",
-    "league": "England - National League",
-    "country": "England",
-    "homeTeam": {
-      "team_name": "Southend Utd"
-    },
-    "awayTeam": {
-      "team_name": "Gateshead FC"
-    },
-    "status": "NS"
-  },
-  {
-    "fixture_id": "2026-03-10-Wealdstone-Tamworth",
-    "date": "2026-03-10",
-    "time": "19:45",
-    "league": "England - National League",
-    "country": "England",
-    "homeTeam": {
-      "team_name": "Wealdstone"
-    },
-    "awayTeam": {
-      "team_name": "Tamworth"
-    },
-    "status": "NS"
-  },
-  {
-    "fixture_id": "2026-03-10-Woking-BorehamWood",
-    "date": "2026-03-10",
-    "time": "19:45",
-    "league": "England - National League",
-    "country": "England",
-    "homeTeam": {
-      "team_name": "Woking"
-    },
-    "awayTeam": {
-      "team_name": "Boreham Wood"
-    },
-    "status": "NS"
-  },
-  {
     "fixture_id": "2026-03-10-Barnsley-CardiffCity",
     "date": "2026-03-10",
-    "time": "19:45",
+    "time": "1:1",
     "league": "England - League One",
     "country": "England",
     "homeTeam": {
@@ -380,7 +128,7 @@
   {
     "fixture_id": "2026-03-10-Doncaster-LutonTown",
     "date": "2026-03-10",
-    "time": "19:45",
+    "time": "1:1",
     "league": "England - League One",
     "country": "England",
     "homeTeam": {
@@ -394,7 +142,7 @@
   {
     "fixture_id": "2026-03-10-ExeterCity-LincolnCity",
     "date": "2026-03-10",
-    "time": "19:45",
+    "time": "0:1",
     "league": "England - League One",
     "country": "England",
     "homeTeam": {
@@ -408,7 +156,7 @@
   {
     "fixture_id": "2026-03-10-Mansfield-Reading",
     "date": "2026-03-10",
-    "time": "19:45",
+    "time": "1:0",
     "league": "England - League One",
     "country": "England",
     "homeTeam": {
@@ -422,7 +170,7 @@
   {
     "fixture_id": "2026-03-10-Stevenage-LeytonOrient",
     "date": "2026-03-10",
-    "time": "19:45",
+    "time": "1:2",
     "league": "England - League One",
     "country": "England",
     "homeTeam": {
@@ -436,7 +184,7 @@
   {
     "fixture_id": "2026-03-10-WiganAthletic-Plymouth",
     "date": "2026-03-10",
-    "time": "19:45",
+    "time": "0:3",
     "league": "England - League One",
     "country": "England",
     "homeTeam": {
@@ -448,9 +196,261 @@
     "status": "NS"
   },
   {
+    "fixture_id": "2026-03-10-AldershotTown-CarlisleUtd",
+    "date": "2026-03-10",
+    "time": "0:2",
+    "league": "England - National League",
+    "country": "England",
+    "homeTeam": {
+      "team_name": "Aldershot Town"
+    },
+    "awayTeam": {
+      "team_name": "Carlisle Utd"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-10-Eastleigh-BrackleyTown",
+    "date": "2026-03-10",
+    "time": "2:1",
+    "league": "England - National League",
+    "country": "England",
+    "homeTeam": {
+      "team_name": "Eastleigh"
+    },
+    "awayTeam": {
+      "team_name": "Brackley Town"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-10-Scunthorpe-SuttonUtd",
+    "date": "2026-03-10",
+    "time": "1:2",
+    "league": "England - National League",
+    "country": "England",
+    "homeTeam": {
+      "team_name": "Scunthorpe"
+    },
+    "awayTeam": {
+      "team_name": "Sutton Utd"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-10-SouthendUtd-GatesheadFC",
+    "date": "2026-03-10",
+    "time": "1:1",
+    "league": "England - National League",
+    "country": "England",
+    "homeTeam": {
+      "team_name": "Southend Utd"
+    },
+    "awayTeam": {
+      "team_name": "Gateshead FC"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-10-Wealdstone-Tamworth",
+    "date": "2026-03-10",
+    "time": "3:2",
+    "league": "England - National League",
+    "country": "England",
+    "homeTeam": {
+      "team_name": "Wealdstone"
+    },
+    "awayTeam": {
+      "team_name": "Tamworth"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-10-Woking-BorehamWood",
+    "date": "2026-03-10",
+    "time": "2:2",
+    "league": "England - National League",
+    "country": "England",
+    "homeTeam": {
+      "team_name": "Woking"
+    },
+    "awayTeam": {
+      "team_name": "Boreham Wood"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-10-AFCFylde-TelfordUtd",
+    "date": "2026-03-10",
+    "time": "2:1",
+    "league": "England - National League North",
+    "country": "England",
+    "homeTeam": {
+      "team_name": "AFC Fylde"
+    },
+    "awayTeam": {
+      "team_name": "Telford Utd"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-10-AlfretonTown-Radcliffe",
+    "date": "2026-03-10",
+    "time": "1:1",
+    "league": "England - National League North",
+    "country": "England",
+    "homeTeam": {
+      "team_name": "Alfreton Town"
+    },
+    "awayTeam": {
+      "team_name": "Radcliffe"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-10-BedfordTown-WorksopTown",
+    "date": "2026-03-10",
+    "time": "0:2",
+    "league": "England - National League North",
+    "country": "England",
+    "homeTeam": {
+      "team_name": "Bedford Town"
+    },
+    "awayTeam": {
+      "team_name": "Worksop Town"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-10-Chorley-SouthShields",
+    "date": "2026-03-10",
+    "time": "1:1",
+    "league": "England - National League North",
+    "country": "England",
+    "homeTeam": {
+      "team_name": "Chorley"
+    },
+    "awayTeam": {
+      "team_name": "South Shields"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-10-Curzon-OxfordCity",
+    "date": "2026-03-10",
+    "time": "2:2",
+    "league": "England - National League North",
+    "country": "England",
+    "homeTeam": {
+      "team_name": "Curzon"
+    },
+    "awayTeam": {
+      "team_name": "Oxford City"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-10-Darlington-Buxton",
+    "date": "2026-03-10",
+    "time": "0:2",
+    "league": "England - National League North",
+    "country": "England",
+    "homeTeam": {
+      "team_name": "Darlington"
+    },
+    "awayTeam": {
+      "team_name": "Buxton"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-10-HerefordUtd-Leamington",
+    "date": "2026-03-10",
+    "time": "5:1",
+    "league": "England - National League North",
+    "country": "England",
+    "homeTeam": {
+      "team_name": "Hereford Utd"
+    },
+    "awayTeam": {
+      "team_name": "Leamington"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-10-Kidderminster-PeterboroughS.",
+    "date": "2026-03-10",
+    "time": "4:0",
+    "league": "England - National League North",
+    "country": "England",
+    "homeTeam": {
+      "team_name": "Kidderminster"
+    },
+    "awayTeam": {
+      "team_name": "Peterborough S."
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-10-Marine-Macclesfield",
+    "date": "2026-03-10",
+    "time": "2:4",
+    "league": "England - National League North",
+    "country": "England",
+    "homeTeam": {
+      "team_name": "Marine"
+    },
+    "awayTeam": {
+      "team_name": "Macclesfield"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-10-MerthyrTown-Chester",
+    "date": "2026-03-10",
+    "time": "1:2",
+    "league": "England - National League North",
+    "country": "England",
+    "homeTeam": {
+      "team_name": "Merthyr Town"
+    },
+    "awayTeam": {
+      "team_name": "Chester"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-10-Scarborough-KingsLynn",
+    "date": "2026-03-10",
+    "time": "1:1",
+    "league": "England - National League North",
+    "country": "England",
+    "homeTeam": {
+      "team_name": "Scarborough"
+    },
+    "awayTeam": {
+      "team_name": "Kings Lynn"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-10-Southport-Spennymoor",
+    "date": "2026-03-10",
+    "time": "2:0",
+    "league": "England - National League North",
+    "country": "England",
+    "homeTeam": {
+      "team_name": "Southport"
+    },
+    "awayTeam": {
+      "team_name": "Spennymoor"
+    },
+    "status": "NS"
+  },
+  {
     "fixture_id": "2026-03-10-LeicesterCity-BristolCity",
     "date": "2026-03-10",
-    "time": "19:45",
+    "time": "2:0",
     "league": "England - Championship",
     "country": "England",
     "homeTeam": {
@@ -464,7 +464,7 @@
   {
     "fixture_id": "2026-03-10-Millwall-DerbyCounty",
     "date": "2026-03-10",
-    "time": "19:45",
+    "time": "1:0",
     "league": "England - Championship",
     "country": "England",
     "homeTeam": {
@@ -478,7 +478,7 @@
   {
     "fixture_id": "2026-03-10-Portsmouth-SwanseaCity",
     "date": "2026-03-10",
-    "time": "19:45",
+    "time": "1:2",
     "league": "England - Championship",
     "country": "England",
     "homeTeam": {
@@ -492,7 +492,7 @@
   {
     "fixture_id": "2026-03-10-SheffieldWed-Watford",
     "date": "2026-03-10",
-    "time": "19:45",
+    "time": "1:1",
     "league": "England - Championship",
     "country": "England",
     "homeTeam": {
@@ -506,7 +506,7 @@
   {
     "fixture_id": "2026-03-10-Wrexham-HullCity",
     "date": "2026-03-10",
-    "time": "19:45",
+    "time": "1:2",
     "league": "England - Championship",
     "country": "England",
     "homeTeam": {
@@ -520,7 +520,7 @@
   {
     "fixture_id": "2026-03-10-StokeCity-IpswichTown",
     "date": "2026-03-10",
-    "time": "20:00",
+    "time": "3:3",
     "league": "England - Championship",
     "country": "England",
     "homeTeam": {
@@ -534,7 +534,7 @@
   {
     "fixture_id": "2026-03-10-BathCity-Farnborough",
     "date": "2026-03-10",
-    "time": "19:45",
+    "time": "0:1",
     "league": "England - National League South",
     "country": "England",
     "homeTeam": {
@@ -548,7 +548,7 @@
   {
     "fixture_id": "2026-03-10-Dorking-ChelmsfordCity",
     "date": "2026-03-10",
-    "time": "19:45",
+    "time": "1:1",
     "league": "England - National League South",
     "country": "England",
     "homeTeam": {
@@ -562,7 +562,7 @@
   {
     "fixture_id": "2026-03-10-DoverAthletic-Tonbridge",
     "date": "2026-03-10",
-    "time": "19:45",
+    "time": "2:0",
     "league": "England - National League South",
     "country": "England",
     "homeTeam": {
@@ -576,7 +576,7 @@
   {
     "fixture_id": "2026-03-10-Eastbourne-EbbsfleetUtd",
     "date": "2026-03-10",
-    "time": "19:45",
+    "time": "1:3",
     "league": "England - National League South",
     "country": "England",
     "homeTeam": {
@@ -590,7 +590,7 @@
   {
     "fixture_id": "2026-03-10-HemelHempstead-Chippenham",
     "date": "2026-03-10",
-    "time": "19:45",
+    "time": "3:2",
     "league": "England - National League South",
     "country": "England",
     "homeTeam": {
@@ -604,7 +604,7 @@
   {
     "fixture_id": "2026-03-10-Horsham-Hornchurch",
     "date": "2026-03-10",
-    "time": "19:45",
+    "time": "0:2",
     "league": "England - National League South",
     "country": "England",
     "homeTeam": {
@@ -618,7 +618,7 @@
   {
     "fixture_id": "2026-03-10-MaidstoneUtd-DagenhameR.",
     "date": "2026-03-10",
-    "time": "19:45",
+    "time": "2:1",
     "league": "England - National League South",
     "country": "England",
     "homeTeam": {
@@ -632,7 +632,7 @@
   {
     "fixture_id": "2026-03-10-SloughTown-HamptoneR.",
     "date": "2026-03-10",
-    "time": "19:45",
+    "time": "1:3",
     "league": "England - National League South",
     "country": "England",
     "homeTeam": {
@@ -646,7 +646,7 @@
   {
     "fixture_id": "2026-03-10-TorquayUtd-Salisbury",
     "date": "2026-03-10",
-    "time": "19:45",
+    "time": "2:1",
     "league": "England - National League South",
     "country": "England",
     "homeTeam": {
@@ -660,7 +660,7 @@
   {
     "fixture_id": "2026-03-10-Weston-s.-Mare-AFCTotton",
     "date": "2026-03-10",
-    "time": "19:45",
+    "time": "1:0",
     "league": "England - National League South",
     "country": "England",
     "homeTeam": {
@@ -674,7 +674,7 @@
   {
     "fixture_id": "2026-03-10-Worthing-MaidenheadUtd",
     "date": "2026-03-10",
-    "time": "19:45",
+    "time": "0:0",
     "league": "England - National League South",
     "country": "England",
     "homeTeam": {
@@ -688,7 +688,7 @@
   {
     "fixture_id": "2026-03-10-Beerschot-AnderlechtB",
     "date": "2026-03-10",
-    "time": "19:00",
+    "time": "4:2",
     "league": "Belgium - Challenger Pro League",
     "country": "Belgium",
     "homeTeam": {
@@ -702,7 +702,7 @@
   {
     "fixture_id": "2026-03-10-Eupen-LierseK.",
     "date": "2026-03-10",
-    "time": "19:00",
+    "time": "0:1",
     "league": "Belgium - Challenger Pro League",
     "country": "Belgium",
     "homeTeam": {
@@ -716,7 +716,7 @@
   {
     "fixture_id": "2026-03-10-KRCGenkB-ClubBruggeB",
     "date": "2026-03-10",
-    "time": "19:00",
+    "time": "0:0",
     "league": "Belgium - Challenger Pro League",
     "country": "Belgium",
     "homeTeam": {
@@ -730,7 +730,7 @@
   {
     "fixture_id": "2026-03-10-PatroEisden-RFCLiege",
     "date": "2026-03-10",
-    "time": "19:00",
+    "time": "1:1",
     "league": "Belgium - Challenger Pro League",
     "country": "Belgium",
     "homeTeam": {
@@ -742,9 +742,23 @@
     "status": "NS"
   },
   {
+    "fixture_id": "2026-03-10-AyrUtd-QueensPark",
+    "date": "2026-03-10",
+    "time": "1:2",
+    "league": "Scotland - Championship",
+    "country": "Scotland",
+    "homeTeam": {
+      "team_name": "Ayr Utd"
+    },
+    "awayTeam": {
+      "team_name": "Queens Park"
+    },
+    "status": "NS"
+  },
+  {
     "fixture_id": "2026-03-10-HWWelders-Dundela",
     "date": "2026-03-10",
-    "time": "19:45",
+    "time": "3:1",
     "league": "Northern Ireland - Championship",
     "country": "Northern Ireland",
     "homeTeam": {
@@ -758,7 +772,7 @@
   {
     "fixture_id": "2026-03-10-Loughgall-Ards",
     "date": "2026-03-10",
-    "time": "19:45",
+    "time": "0:1",
     "league": "Northern Ireland - Championship",
     "country": "Northern Ireland",
     "homeTeam": {
@@ -772,7 +786,7 @@
   {
     "fixture_id": "2026-03-10-Warrenpoint-Newington",
     "date": "2026-03-10",
-    "time": "19:45",
+    "time": "2:4",
     "league": "Northern Ireland - Championship",
     "country": "Northern Ireland",
     "homeTeam": {
@@ -786,7 +800,7 @@
   {
     "fixture_id": "2026-03-10-Bangor-Glentoran",
     "date": "2026-03-10",
-    "time": "19:45",
+    "time": "0:4",
     "league": "Northern Ireland - Premiership",
     "country": "Northern Ireland",
     "homeTeam": {
@@ -800,7 +814,7 @@
   {
     "fixture_id": "2026-03-10-Crusaders-Cliftonville",
     "date": "2026-03-10",
-    "time": "19:45",
+    "time": "0:1",
     "league": "Northern Ireland - Premiership",
     "country": "Northern Ireland",
     "homeTeam": {
@@ -814,7 +828,7 @@
   {
     "fixture_id": "2026-03-10-Linfield-Portadown",
     "date": "2026-03-10",
-    "time": "19:45",
+    "time": "3:1",
     "league": "Northern Ireland - Premiership",
     "country": "Northern Ireland",
     "homeTeam": {
@@ -826,23 +840,9 @@
     "status": "NS"
   },
   {
-    "fixture_id": "2026-03-10-AyrUtd-QueensPark",
-    "date": "2026-03-10",
-    "time": "19:45",
-    "league": "Scotland - Championship",
-    "country": "Scotland",
-    "homeTeam": {
-      "team_name": "Ayr Utd"
-    },
-    "awayTeam": {
-      "team_name": "Queens Park"
-    },
-    "status": "NS"
-  },
-  {
     "fixture_id": "2026-03-10-DeportivoPasto-AmericadeCali",
     "date": "2026-03-10",
-    "time": "01:30",
+    "time": "2:0",
     "league": "Colombia - Primera A",
     "country": "Colombia",
     "homeTeam": {
@@ -856,7 +856,7 @@
   {
     "fixture_id": "2026-03-10-A.Bucaramanga-D.Pereira",
     "date": "2026-03-10",
-    "time": "23:20",
+    "time": "3:0",
     "league": "Colombia - Primera A",
     "country": "Colombia",
     "homeTeam": {
@@ -870,7 +870,7 @@
   {
     "fixture_id": "2026-03-10-Independiente-UnionSantaFe",
     "date": "2026-03-10",
-    "time": "22:45",
+    "time": "4:4",
     "league": "Argentina - Primera Division",
     "country": "Argentina",
     "homeTeam": {
@@ -884,7 +884,7 @@
   {
     "fixture_id": "2026-03-10-Tigre-VelezSarsfield",
     "date": "2026-03-10",
-    "time": "22:45",
+    "time": "1:1",
     "league": "Argentina - Primera Division",
     "country": "Argentina",
     "homeTeam": {
@@ -896,23 +896,9 @@
     "status": "NS"
   },
   {
-    "fixture_id": "2026-03-10-Orense-Manta",
-    "date": "2026-03-10",
-    "time": "00:30",
-    "league": "Ecuador - Liga Pro",
-    "country": "Ecuador",
-    "homeTeam": {
-      "team_name": "Orense"
-    },
-    "awayTeam": {
-      "team_name": "Manta"
-    },
-    "status": "NS"
-  },
-  {
     "fixture_id": "2026-03-10-BostonRiver-LiverpoolM.",
     "date": "2026-03-10",
-    "time": "00:30",
+    "time": "0:1",
     "league": "Uruguay - Primera Division",
     "country": "Uruguay",
     "homeTeam": {
@@ -924,9 +910,23 @@
     "status": "NS"
   },
   {
+    "fixture_id": "2026-03-10-Orense-Manta",
+    "date": "2026-03-10",
+    "time": "1:1",
+    "league": "Ecuador - Liga Pro",
+    "country": "Ecuador",
+    "homeTeam": {
+      "team_name": "Orense"
+    },
+    "awayTeam": {
+      "team_name": "Manta"
+    },
+    "status": "NS"
+  },
+  {
     "fixture_id": "2026-03-10-AlianzaLima-FBCMelgar",
     "date": "2026-03-10",
-    "time": "01:30",
+    "time": "3:1",
     "league": "Peru - Primera Division",
     "country": "Peru",
     "homeTeam": {
@@ -940,7 +940,7 @@
   {
     "fixture_id": "2026-03-10-AlBataeh-Ajman",
     "date": "2026-03-10",
-    "time": "17:30",
+    "time": "1:0",
     "league": "UAE - Pro League",
     "country": "UAE",
     "homeTeam": {
@@ -954,7 +954,7 @@
   {
     "fixture_id": "2026-03-10-AlDhafra-AlJazira",
     "date": "2026-03-10",
-    "time": "17:30",
+    "time": "1:2",
     "league": "UAE - Pro League",
     "country": "UAE",
     "homeTeam": {
@@ -966,23 +966,9 @@
     "status": "NS"
   },
   {
-    "fixture_id": "2026-03-10-OrbitCollege-MamelodiS.",
-    "date": "2026-03-10",
-    "time": "17:30",
-    "league": "South Africa - Premier Division",
-    "country": "South Africa",
-    "homeTeam": {
-      "team_name": "Orbit College"
-    },
-    "awayTeam": {
-      "team_name": "Mamelodi S."
-    },
-    "status": "NS"
-  },
-  {
     "fixture_id": "2026-03-10-ElGouna-AlMasry",
     "date": "2026-03-10",
-    "time": "19:30",
+    "time": "1:0",
     "league": "Egypt - Premier League",
     "country": "Egypt",
     "homeTeam": {
@@ -996,7 +982,7 @@
   {
     "fixture_id": "2026-03-10-BhayangkaraS.-Arema",
     "date": "2026-03-10",
-    "time": "13:30",
+    "time": "2:1",
     "league": "Indonesia - Liga 1",
     "country": "Indonesia",
     "homeTeam": {
@@ -1004,6 +990,20 @@
     },
     "awayTeam": {
       "team_name": "Arema"
+    },
+    "status": "NS"
+  },
+  {
+    "fixture_id": "2026-03-10-OrbitCollege-MamelodiS.",
+    "date": "2026-03-10",
+    "time": "0:2",
+    "league": "South Africa - Premier Division",
+    "country": "South Africa",
+    "homeTeam": {
+      "team_name": "Orbit College"
+    },
+    "awayTeam": {
+      "team_name": "Mamelodi S."
     },
     "status": "NS"
   }

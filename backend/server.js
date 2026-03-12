@@ -61,11 +61,11 @@ app.post('/api/sync', async (req, res) => {
     const date = req.query.date || new Date().toISOString().split('T')[0];
     console.log(`Manual Sync triggered for: ${date}`);
     try {
-        const leagues = await dataManager.syncDailyData(date);
-        res.json({ 
-            message: `Sync successful. Scraped standings for: ${leagues.join(', ')}`, 
-            count: 0,
-            date: date
+        const result = dataManager.enqueueManualSync(date);
+        res.status(202).json({
+            message: `Sync queued for ${result.date}`,
+            date: result.date,
+            queuedManual: result.queuedManual
         });
     } catch (error) {
         console.error('Sync Error:', error);

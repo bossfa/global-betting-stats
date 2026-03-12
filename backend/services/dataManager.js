@@ -9,8 +9,13 @@ const DATA_DIR = path.join(__dirname, '../data');
 let syncStatus = {
     isSyncing: false,
     currentAction: 'Idle',
-    lastSyncTime: null
+    lastSyncTime: null,
+    jobType: null,
+    queuedManual: 0
 };
+
+let manualQueue = [];
+let isProcessingManualQueue = false;
 
 // Ensure data dir exists
 if (!fs.existsSync(DATA_DIR)) {
@@ -24,7 +29,13 @@ if (!fs.existsSync(DATA_DIR)) {
  * 3. Enriches fixtures with Home/Away stats from standings
  */
 async function syncDailyData(date) {
-  syncStatus.isSyncing = true;
+  const managed = arguments.length > 1 && arguments[1] && arguments[1].managed === true;
+
+  if (!managed) {
+    syncStatus.isSyncing = true;
+    syncStatus.jobType = 'manual';
+  }
+
   syncStatus.currentAction = `Syncing data for ${date}...`;
   console.log(`Starting Daily SCRAPE Sync for ${date}...`);
   
@@ -80,14 +91,12 @@ async function syncDailyData(date) {
       // We return the standings keys for info, but the main goal is done.
       return Object.keys(leagueStandings);
   } finally {
-      // Only reset status if not part of a larger batch (prefetch handles its own status)
-      // But since this is also called directly, we rely on the caller to manage global status if needed.
-      // However, for single sync calls, we might want to reset. 
-      // Let's assume prefetch will override or we just set idle here if not prefetching.
-      // Ideally, we shouldn't reset here if called from prefetch.
-      // Simplified: We'll set idle in the caller (API or Prefetch), or we can check a flag.
-      // For now, let's NOT reset here to avoid flickering during prefetch loop.
-      // The caller is responsible for setting isSyncing = false.
+      if (!managed) {
+          syncStatus.isSyncing = false;
+          syncStatus.currentAction = 'Idle';
+          syncStatus.lastSyncTime = new Date().toISOString();
+          syncStatus.jobType = null;
+      }
   }
 }
 
@@ -144,6 +153,7 @@ async function prefetchWeekData() {
     }
 
     syncStatus.isSyncing = true;
+    syncStatus.jobType = 'prefetch';
     syncStatus.currentAction = 'Starting 7-day prefetch...';
     console.log('[BACKGROUND] Starting 7-day prefetch...');
     
@@ -151,6 +161,11 @@ async function prefetchWeekData() {
     
     try {
         for (let i = 0; i < 7; i++) {
+            if (manualQueue.length > 0) {
+                console.log('[BACKGROUND] Manual sync queued. Pausing prefetch.');
+                break;
+            }
+
             const nextDate = new Date(today);
             nextDate.setDate(today.getDate() + i);
             const dateStr = nextDate.toISOString().split('T')[0];
@@ -174,7 +189,7 @@ async function prefetchWeekData() {
             syncStatus.currentAction = `Syncing missing data for ${dateStr}`;
             console.log(`[BACKGROUND] Data for ${dateStr} missing. Syncing now...`);
             try {
-                await syncDailyData(dateStr);
+                await syncDailyData(dateStr, { managed: true });
                 console.log(`[BACKGROUND] Synced ${dateStr} successfully.`);
                 // Sleep between days to prevent overwhelming the source/server
                 syncStatus.currentAction = `Cooling down...`;
@@ -191,16 +206,62 @@ async function prefetchWeekData() {
         syncStatus.isSyncing = false;
         syncStatus.currentAction = 'Idle';
         syncStatus.lastSyncTime = new Date().toISOString();
+        syncStatus.jobType = null;
+        processManualQueue();
     }
 }
 
 function getSyncStatus() {
+    syncStatus.queuedManual = manualQueue.length;
     return syncStatus;
+}
+
+function enqueueManualSync(date) {
+    const targetDate = date || new Date().toISOString().split('T')[0];
+    if (!manualQueue.includes(targetDate)) {
+        manualQueue.push(targetDate);
+    }
+    syncStatus.queuedManual = manualQueue.length;
+    processManualQueue();
+    return { queued: true, date: targetDate, queuedManual: manualQueue.length };
+}
+
+async function processManualQueue() {
+    if (isProcessingManualQueue) return;
+    if (syncStatus.isSyncing && syncStatus.jobType === 'prefetch') return;
+
+    isProcessingManualQueue = true;
+    try {
+        while (manualQueue.length > 0) {
+            const date = manualQueue.shift();
+            syncStatus.queuedManual = manualQueue.length;
+            syncStatus.isSyncing = true;
+            syncStatus.jobType = 'manual';
+            syncStatus.currentAction = `Syncing data for ${date}...`;
+
+            try {
+                await syncDailyData(date, { managed: true });
+            } catch (err) {
+                console.error(`[MANUAL] Failed to sync ${date}: ${err.message}`);
+                syncStatus.currentAction = `Error syncing ${date}: ${err.message}`;
+                await new Promise(r => setTimeout(r, 2000));
+            } finally {
+                syncStatus.isSyncing = false;
+                syncStatus.jobType = null;
+                syncStatus.currentAction = 'Idle';
+                syncStatus.lastSyncTime = new Date().toISOString();
+            }
+        }
+    } finally {
+        isProcessingManualQueue = false;
+        syncStatus.queuedManual = manualQueue.length;
+    }
 }
 
 module.exports = {
     syncDailyData,
     getDailyAnalysis,
     prefetchWeekData,
-    getSyncStatus
+    getSyncStatus,
+    enqueueManualSync
 };

@@ -88,11 +88,10 @@ function App() {
     try {
       const apiUrl = import.meta.env.VITE_API_URL || (import.meta.env.DEV ? 'http://localhost:5000' : '');
       await axios.post(`${apiUrl}/api/sync?date=${date}`)
-      setNeedSync(false)
-      // Automatically analyze after sync
-      handleAnalyze()
+      setNeedSync(true)
     } catch (err) {
       setError(`Sync Failed: ${err.message}`)
+    } finally {
       setLoading(false)
     }
   }
@@ -117,7 +116,7 @@ function App() {
           {loading ? 'Caricamento...' : 'CARICA ANALISI'}
         </button>
         
-        <button onClick={handleSync} disabled={loading || syncStatus.isSyncing} className="sync-btn">
+        <button onClick={handleSync} disabled={loading} className="sync-btn">
             {syncStatus.isSyncing ? 'Scaricamento in corso...' : 'SCARICA DATI GIORNATA'}
         </button>
       </div>
