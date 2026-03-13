@@ -1,0 +1,273 @@
+{
+  "version": 1,
+  "users": {
+    "u_ecd3309ba91e7b3c": {
+      "id": "u_ecd3309ba91e7b3c",
+      "name": "BetaUser1",
+      "keyHash": "e2ab6ba02026521ee3f2828acb15c9c2d02fd9b447dc8ec3e8e2e0dc17d07b30",
+      "createdAt": "2026-03-12T23:30:02.060Z",
+      "credits": 90,
+      "isPremium": true
+    },
+    "u_99de0b3ffd71280c": {
+      "id": "u_99de0b3ffd71280c",
+      "name": "BetaUser2_21465",
+      "keyHash": "0ae98e6879588c67d9839b6a3ea87c0c1dc237d71fab5437f92cf029b144488e",
+      "createdAt": "2026-03-13T00:05:21.529Z",
+      "credits": 100,
+      "isPremium": true
+    },
+    "u_7624fbc981d87b1e": {
+      "id": "u_7624fbc981d87b1e",
+      "name": "BetaUser3_11357",
+      "keyHash": "334dffda23a7df35f1f9c6d3777f04b75038bc2e4d21ce3e42528d1c9f08649f",
+      "createdAt": "2026-03-13T00:06:51.408Z",
+      "credits": 90,
+      "isPremium": true
+    },
+    "u_fd8e3d96c4b6a585": {
+      "id": "u_fd8e3d96c4b6a585",
+      "name": "BetaUser4_46328",
+      "keyHash": "229774848c5daccd89258794b8c62e2a16c21fbb6532cbc89a7698a3aacc8fb0",
+      "createdAt": "2026-03-13T00:07:26.467Z",
+      "credits": 90,
+      "isPremium": true
+    }
+  },
+  "picks": {
+    "u_ecd3309ba91e7b3c": {
+      "2026-03-12|2026-03-12-Corinthians-Coritiba|GG": {
+        "userId": "u_ecd3309ba91e7b3c",
+        "date": "2026-03-12",
+        "fixture_id": "2026-03-12-Corinthians-Coritiba",
+        "market": "GG",
+        "selection": "Y",
+        "updatedAt": "2026-03-12T23:31:41.007Z"
+      },
+      "2026-03-12|2026-03-12-Corinthians-Coritiba|O25": {
+        "userId": "u_ecd3309ba91e7b3c",
+        "date": "2026-03-12",
+        "fixture_id": "2026-03-12-Corinthians-Coritiba",
+        "market": "O25",
+        "selection": "Y",
+        "updatedAt": "2026-03-12T23:31:41.007Z"
+      }
+    },
+    "u_99de0b3ffd71280c": {},
+    "u_7624fbc981d87b1e": {},
+    "u_fd8e3d96c4b6a585": {}
+  },
+  "tournaments": {
+    "t_5dfbb7dcb7e4e77d": {
+      "id": "t_5dfbb7dcb7e4e77d",
+      "name": "Weekly Cup",
+      "startDate": "2026-03-12",
+      "endDate": "2026-03-19",
+      "entryFeeCredits": 10,
+      "maxPlayers": null,
+      "createdBy": "u_ecd3309ba91e7b3c",
+      "createdAt": "2026-03-12T23:32:51.757Z",
+      "participants": [
+        "u_ecd3309ba91e7b3c"
+      ],
+      "prizeSplits": [
+        0.6,
+        0.3,
+        0.1
+      ],
+      "payoutsDone": false
+    },
+    "t_864a28e70f65ece0": {
+      "id": "t_864a28e70f65ece0",
+      "name": "KO Cup",
+      "startDate": "2026-03-12",
+      "endDate": "2026-03-19",
+      "entryFeeCredits": 10,
+      "maxPlayers": null,
+      "scoringMode": "knockout",
+      "payoutMode": "top20",
+      "strikeLimit": 3,
+      "parlayMinLegs": null,
+      "createdBy": "u_99de0b3ffd71280c",
+      "createdAt": "2026-03-13T00:05:21.592Z",
+      "participants": [],
+      "prizeSplits": [
+        0.6,
+        0.3,
+        0.1
+      ],
+      "payoutsDone": false
+    },
+    "t_b94f2ee562894a3b": {
+      "id": "t_b94f2ee562894a3b",
+      "name": "Parlay Cup",
+      "startDate": "2026-03-12",
+      "endDate": "2026-03-19",
+      "entryFeeCredits": 10,
+      "maxPlayers": null,
+      "scoringMode": "parlayOnly",
+      "payoutMode": "fixedTop3",
+      "strikeLimit": null,
+      "parlayMinLegs": 3,
+      "createdBy": "u_99de0b3ffd71280c",
+      "createdAt": "2026-03-13T00:05:21.619Z",
+      "participants": [],
+      "prizeSplits": [
+        0.6,
+        0.3,
+        0.1
+      ],
+      "payoutsDone": false
+    },
+    "t_422b77203bd6b941": {
+      "id": "t_422b77203bd6b941",
+      "name": "Parlay Future",
+      "startDate": "2026-03-20",
+      "endDate": "2026-03-27",
+      "entryFeeCredits": 10,
+      "maxPlayers": null,
+      "scoringMode": "parlayOnly",
+      "payoutMode": "fixedTop3",
+      "strikeLimit": null,
+      "parlayMinLegs": 3,
+      "createdBy": "u_7624fbc981d87b1e",
+      "createdAt": "2026-03-13T00:06:51.454Z",
+      "participants": [
+        "u_7624fbc981d87b1e"
+      ],
+      "prizeSplits": [
+        0.6,
+        0.3,
+        0.1
+      ],
+      "payoutsDone": false
+    },
+    "t_e50236874eee1fec": {
+      "id": "t_e50236874eee1fec",
+      "name": "Parlay Future 2",
+      "startDate": "2026-03-20",
+      "endDate": "2026-03-27",
+      "entryFeeCredits": 10,
+      "maxPlayers": null,
+      "scoringMode": "parlayOnly",
+      "payoutMode": "fixedTop3",
+      "strikeLimit": null,
+      "parlayMinLegs": 3,
+      "createdBy": "u_fd8e3d96c4b6a585",
+      "createdAt": "2026-03-13T00:07:26.505Z",
+      "participants": [
+        "u_fd8e3d96c4b6a585"
+      ],
+      "prizeSplits": [
+        0.6,
+        0.3,
+        0.1
+      ],
+      "payoutsDone": false
+    }
+  },
+  "parlays": {
+    "u_99de0b3ffd71280c": {
+      "p_65cdc16ada33c5f7": {
+        "id": "p_65cdc16ada33c5f7",
+        "userId": "u_99de0b3ffd71280c",
+        "tournamentId": "t_b94f2ee562894a3b",
+        "date": "2026-03-12",
+        "legs": [
+          {
+            "fixture_id": "2026-03-12-Corinthians-Coritiba",
+            "market": "GG",
+            "selection": "Y"
+          },
+          {
+            "fixture_id": "2026-03-12-Corinthians-Coritiba",
+            "market": "O25",
+            "selection": "Y"
+          },
+          {
+            "fixture_id": "2026-03-12-Flamengo-Cruzeiro",
+            "market": "O25",
+            "selection": "Y"
+          }
+        ],
+        "createdAt": "2026-03-13T00:05:21.649Z"
+      }
+    },
+    "u_7624fbc981d87b1e": {
+      "p_3c51faa142eafafa": {
+        "id": "p_3c51faa142eafafa",
+        "userId": "u_7624fbc981d87b1e",
+        "tournamentId": "t_422b77203bd6b941",
+        "date": "2026-03-20",
+        "legs": [
+          {
+            "fixture_id": "f1",
+            "market": "GG",
+            "selection": "Y"
+          },
+          {
+            "fixture_id": "f2",
+            "market": "O25",
+            "selection": "Y"
+          },
+          {
+            "fixture_id": "f3",
+            "market": "GG",
+            "selection": "Y"
+          }
+        ],
+        "createdAt": "2026-03-13T00:06:51.481Z"
+      },
+      "p_06d24ec5283d8320": {
+        "id": "p_06d24ec5283d8320",
+        "userId": "u_7624fbc981d87b1e",
+        "tournamentId": "t_422b77203bd6b941",
+        "date": "2026-03-20",
+        "legs": [
+          {
+            "fixture_id": "f1",
+            "market": "GG",
+            "selection": "Y"
+          },
+          {
+            "fixture_id": "f2",
+            "market": "O25",
+            "selection": "Y"
+          },
+          {
+            "fixture_id": "f3",
+            "market": "GG",
+            "selection": "Y"
+          }
+        ],
+        "createdAt": "2026-03-13T00:06:51.533Z"
+      }
+    },
+    "u_fd8e3d96c4b6a585": {
+      "p_5c1754e648ae5bbb": {
+        "id": "p_5c1754e648ae5bbb",
+        "userId": "u_fd8e3d96c4b6a585",
+        "tournamentId": "t_e50236874eee1fec",
+        "date": "2026-03-20",
+        "legs": [
+          {
+            "fixture_id": "f1",
+            "market": "GG",
+            "selection": "Y"
+          },
+          {
+            "fixture_id": "f2",
+            "market": "O25",
+            "selection": "Y"
+          },
+          {
+            "fixture_id": "f3",
+            "market": "GG",
+            "selection": "Y"
+          }
+        ],
+        "createdAt": "2026-03-13T00:07:26.561Z"
+      }
+    }
+  }
+}

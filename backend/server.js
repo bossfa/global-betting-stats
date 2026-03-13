@@ -73,6 +73,99 @@ app.post('/api/sync', async (req, res) => {
     }
 });
 
+app.post('/api/community/register', async (req, res) => {
+    try {
+        const name = req.body && req.body.name ? String(req.body.name) : '';
+        const isPremium = String(req.headers['x-community-premium'] || '').toLowerCase() === 'true' || String(req.headers['x-community-premium'] || '') === '1';
+        const result = await dataManager.registerCommunityUser(name, isPremium);
+        res.json(result);
+    } catch (error) {
+        res.status(400).json({ message: error.message });
+    }
+});
+
+app.get('/api/community/me', async (req, res) => {
+    try {
+        const apiKey = String(req.headers['x-community-key'] || '');
+        const me = await dataManager.getCommunityMe(apiKey);
+        res.json(me);
+    } catch (error) {
+        res.status(401).json({ message: error.message });
+    }
+});
+
+app.get('/api/community/leaderboard', async (req, res) => {
+    try {
+        const weekStart = req.query.weekStart ? String(req.query.weekStart) : null;
+        const result = await dataManager.getWeeklyLeaderboard(weekStart);
+        res.json(result);
+    } catch (error) {
+        res.status(400).json({ message: error.message });
+    }
+});
+
+app.post('/api/community/picks', async (req, res) => {
+    try {
+        const apiKey = String(req.headers['x-community-key'] || '');
+        const result = await dataManager.submitCommunityPicks(apiKey, req.body);
+        res.json(result);
+    } catch (error) {
+        const status = error.message === 'Non autorizzato' ? 401 : 400;
+        res.status(status).json({ message: error.message });
+    }
+});
+
+app.post('/api/community/parlays', async (req, res) => {
+    try {
+        const apiKey = String(req.headers['x-community-key'] || '');
+        const result = await dataManager.submitCommunityParlay(apiKey, req.body);
+        res.json(result);
+    } catch (error) {
+        const status = error.message === 'Non autorizzato' ? 401 : 400;
+        res.status(status).json({ message: error.message });
+    }
+});
+
+app.get('/api/community/tournaments', async (req, res) => {
+    try {
+        const tournaments = await dataManager.listTournaments();
+        res.json({ tournaments });
+    } catch (error) {
+        res.status(500).json({ message: error.message });
+    }
+});
+
+app.post('/api/community/tournaments', async (req, res) => {
+    try {
+        const apiKey = String(req.headers['x-community-key'] || '');
+        const result = await dataManager.createTournament(apiKey, req.body);
+        res.json(result);
+    } catch (error) {
+        const status = error.message === 'Non autorizzato' ? 401 : 400;
+        res.status(status).json({ message: error.message });
+    }
+});
+
+app.post('/api/community/tournaments/:id/join', async (req, res) => {
+    try {
+        const apiKey = String(req.headers['x-community-key'] || '');
+        const result = await dataManager.joinTournament(apiKey, req.params.id);
+        res.json(result);
+    } catch (error) {
+        const status = error.message === 'Non autorizzato' ? 401 : 400;
+        res.status(status).json({ message: error.message });
+    }
+});
+
+app.get('/api/community/tournaments/:id/leaderboard', async (req, res) => {
+    try {
+        const result = await dataManager.getTournamentLeaderboard(req.params.id);
+        res.json(result);
+    } catch (error) {
+        res.status(400).json({ message: error.message });
+    }
+});
+
 // ANALYZE ENDPOINT: Reads from static file
 app.get('/api/analyze', async (req, res) => {
   try {
